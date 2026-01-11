@@ -6,9 +6,25 @@
  */
 #include "main.h"
 #include "BrainX_RS485.h"
+#include <string.h>
 
-void RS485_Init(RS485_Device *device, uint8_t id){
+void RS485_Init(RS485_Device *device, uint8_t id,
+				GPIO_TypeDef *GPIO_Driver_Enable_Port,
+				uint16_t GPIO_Driver_Enable_Pin,
+				GPIO_TypeDef *GPIO_Receiver_Enable_Port,
+				uint16_t GPIO_Receiver_Enable_Pin)
+{
 	device->device_id = id;
+	device->GPIO_Driver_Enable_Port = GPIO_Driver_Enable_Port;
+	device->GPIO_Driver_Enable_Pin = GPIO_Driver_Enable_Pin;
+	device->GPIO_Receiver_Enable_Port = GPIO_Receiver_Enable_Port;
+	device->GPIO_Receiver_Enable_Pin = GPIO_Receiver_Enable_Pin;
+}
+
+void RS485_RX_Enable(RS485_Device *device){
+	/* RECEIVING MODE: RE: 0, DE: 0 */
+	HAL_GPIO_WritePin(device->GPIO_Receiver_Enable_Port, device->GPIO_Receiver_Enable_Pin, 0);
+	HAL_GPIO_WritePin(device->GPIO_Driver_Enable_Port, device->GPIO_Driver_Enable_Pin, 0);
 }
 
 void RS485_RX_StateMachine(RS485_Device *device, uint8_t state){
@@ -17,7 +33,7 @@ void RS485_RX_StateMachine(RS485_Device *device, uint8_t state){
 
 void RS485_RX_ScanningHeader(RS485_Device *device){
 	if(device->rx_buffer[0] == 0x55){
-		device->device_id = device->rx_buffer[1];
+		device->target_device_id = device->rx_buffer[1];
 		RS485_RX_StateMachine(device, 1);
 	}
 }
@@ -31,6 +47,7 @@ void RS485_RX_CheckDevice(RS485_Device *device){
 		for(int i = 0; i < length; i++){
 			if(device->rx_buffer[1] == device_list[i]){
 				RS485_RX_StateMachine(device, 2);
+				device-> target_device_id = device->rx_buffer[1];
 				break;
 			}
 		}
@@ -91,7 +108,7 @@ void RS485_RX_CheckDataContent(RS485_Device *device){
 int RS485_RX_VerifyDataPacket(RS485_Device *device){
 
 	if(device->state == 3){
-		device->checksum = 0x55 | device->device_id | device->rx_buffer[2] | device->rx_buffer[3];
+		device->checksum = 0x55 | device->rx_buffer[1] | device->rx_buffer[2] | device->rx_buffer[3];
 
 		if(device->checksum == device->rx_buffer[4]){
 			return 1;
@@ -103,16 +120,29 @@ int RS485_RX_VerifyDataPacket(RS485_Device *device){
 
 void RS485_RX_ReceiveVerifiedData(RS485_Device *device){
 	if(RS485_RX_VerifyDataPacket(device) == 1){
+		device->data_content = device->rx_buffer[2];
 		device->data = device->rx_buffer[3];
 	}
 }
 
-void RS485_RX_StartCommunication(RS485_Device *device){
+void RS485_RX_ReceiveData(RS485_Device *device){
 	RS485_RX_ScanningHeader(device); //Waiting for Protocol Header (0x55)
 	RS485_RX_CheckDevice(device); //If header found, check next byte (device ID byte)
 	RS485_RX_CheckDataContent(device); //If device ID is existent, verify if data content is existent
 	RS485_RX_VerifyDataPacket(device); //Detect data errors
 	RS485_RX_ReceiveVerifiedData(device);  //Process legitimate data
 	RS485_RX_StateMachine(device, 0); //Reset State Machine to State 0
+}
+
+void RS485_TX_Enable(RS485_Device *device){
+	/* TRANSMITTING MODE: RE: X (Don't care), DE: 1 */
+	HAL_GPIO_WritePin(device->GPIO_Receiver_Enable_Port, device->GPIO_Receiver_Enable_Pin, 0);
+	HAL_GPIO_WritePin(device->GPIO_Driver_Enable_Port, device->GPIO_Driver_Enable_Pin, 1);
+}
+
+void RS485_TX_SendData(RS485_Device *device, UART_HandleTypeDef *huart, uint8_t target_device_id, uint8_t tx_buffer[10]){
+	device->target_device_id = target_device_id;
+	memcpy(device->tx_buffer, tx_buffer, 10);
+	HAL_UART_Transmit(huart, device->tx_buffer, 10, 100);
 }
 

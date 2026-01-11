@@ -64,8 +64,8 @@ all: main-build
 main-build: BrainX_Testing_Firmware_V1.elf secondary-outputs
 
 # Tool invocations
-BrainX_Testing_Firmware_V1.elf BrainX_Testing_Firmware_V1.map: $(OBJS) $(USER_OBJS) D:\Mechatronics\Repositories\Project_BrainX\firmware\BrainX_Testing_Firmware_V1\STM32F407VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "BrainX_Testing_Firmware_V1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Mechatronics\Repositories\Project_BrainX\firmware\BrainX_Testing_Firmware_V1\STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BrainX_Testing_Firmware_V1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+BrainX_Testing_Firmware_V1.elf BrainX_Testing_Firmware_V1.map: $(OBJS) $(USER_OBJS) D:\Mechatronics\Repositories\Project_S4V_Robot_Kit\Project_BrainX\firmware\BrainX_Testing_Firmware_V1\STM32F407VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "BrainX_Testing_Firmware_V1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Mechatronics\Repositories\Project_S4V_Robot_Kit\Project_BrainX\firmware\BrainX_Testing_Firmware_V1\STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BrainX_Testing_Firmware_V1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

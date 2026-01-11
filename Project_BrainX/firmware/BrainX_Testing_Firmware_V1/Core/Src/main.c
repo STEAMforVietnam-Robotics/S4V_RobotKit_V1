@@ -28,11 +28,6 @@
 #include "BrainX_RS485.h"
 #include <string.h>
 
-uint8_t buff[10];
-uint8_t temp;
-uint8_t check;
-
-
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -42,11 +37,10 @@ uint8_t check;
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-char msg[16];
-uint8_t counter = 0;
-RS485_Device brain_uart4;
+RS485_Device brain_uart2;
 
 uint8_t Rx_Buffer[128];
+uint8_t led_flag = 0;
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -57,6 +51,8 @@ uint8_t Rx_Buffer[128];
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+
+
 
 /* USER CODE END PV */
 
@@ -71,6 +67,9 @@ void SystemClock_Config(void);
 
 uint8_t TxBuffer[] = "Hello World! From STM32 USB CDC Device To Virtual COM Port\r\n";
 uint8_t TxBufferLen = sizeof(TxBuffer);
+uint8_t tx_buffer1[10] = {0x55, 0x10, 0x03, 0x01, 0x57, 0x00, 0x00, 0x00, 0x00, 0x00};
+uint8_t tx_buffer2[10] = {0x55, 0x10, 0x03, 0x02, 0x57, 0x00, 0x00, 0x00, 0x00, 0x00};
+
 /* USER CODE END 0 */
 
 /**
@@ -106,10 +105,14 @@ int main(void)
   MX_USART2_UART_Init();
   MX_UART4_Init();
   MX_USB_DEVICE_Init();
+  MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
-  RS485_Init(&brain_uart4, 0x10);
-  HAL_UARTEx_ReceiveToIdle_DMA(&huart4, brain_uart4.rx_buffer, (sizeof(brain_uart4.rx_buffer)/sizeof(brain_uart4.rx_buffer[0])));
-  //__HAL_DMA_DISABLE_IT(&hdma_uart4_rx, DMA_IT_HT);
+  RS485_Init(&brain_uart2, 0x10, DE_2_GPIO_Port, DE_2_Pin, RE_2_GPIO_Port, RE_2_Pin);
+  RS485_RX_Enable(&brain_uart2);
+//  RS485_TX_Enable(&brain_uart2);
+
+  HAL_UARTEx_ReceiveToIdle_DMA(&huart2, brain_uart2.rx_buffer, (sizeof(brain_uart2.rx_buffer)/sizeof(brain_uart2.rx_buffer[0])));
+//  __HAL_DMA_DISABLE_IT(&hdma_usart2_rx, DMA_IT_HT);
   //Disable Half-Transfer interrupt to reduce CPU loading
 
   /* USER CODE END 2 */
@@ -119,6 +122,18 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+	  if (led_flag == 1){
+		HAL_GPIO_TogglePin(LOW_GPIO_Port, LOW_Pin);
+		HAL_Delay(500);
+	  }
+	  else if(led_flag == 0){
+		HAL_GPIO_WritePin(LOW_GPIO_Port, LOW_Pin, 1);
+	  }
+
+//	  RS485_TX_SendData(&brain_uart2, &huart2, 0x10, tx_buffer1);
+//	  HAL_Delay(5000);
+//	  RS485_TX_SendData(&brain_uart2, &huart2, 0x10, tx_buffer2);
+//	  HAL_Delay(5000);
 
     /* USER CODE BEGIN 3 */
   }
@@ -171,15 +186,25 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t DataSize){
-	if (huart->Instance == UART4){
-
-			RS485_RX_StartCommunication(&brain_uart4);
-
-			HAL_UARTEx_ReceiveToIdle_DMA(&huart4, brain_uart4.rx_buffer, 10);
-
+void BrainX_PowerIndicator(RS485_Device *device, uint8_t *flag){
+	if ((device->target_device_id == 0x10) && (device->data_content == 0x03)){
+		if(device->data == 0x01){
+			*flag = 1;
 		}
+		else if (device->data == 0x02){
+			*flag = 0;
+		}
+	}
 }
+
+void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t DataSize){
+	if (huart->Instance == USART2){
+		RS485_RX_ReceiveData(&brain_uart2);
+		BrainX_PowerIndicator(&brain_uart2, &led_flag);
+		HAL_UARTEx_ReceiveToIdle_DMA(&huart2, brain_uart2.rx_buffer, 10);
+	}
+}
+
 /* USER CODE END 4 */
 
 /**
