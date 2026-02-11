@@ -1,0 +1,8 @@
+../Core/Src/brainx_usbcdc.c:25:6:BrainX_USBCDC_RX_StateMachine	16	static
+../Core/Src/brainx_usbcdc.c:29:6:BrainX_USBCDC_RX_ScanningHeader	8	static
+../Core/Src/brainx_usbcdc.c:35:6:BrainX_USBCDC_RX_CheckDevice	24	static
+../Core/Src/brainx_usbcdc.c:53:10:CheckDataContent	32	static
+../Core/Src/brainx_usbcdc.c:51:6:BrainX_USBCDC_RX_CheckDataContent	16	static
+../Core/Src/brainx_usbcdc.c:98:5:BrainX_USBCDC_RX_VerifyDataPacket	4	static
+../Core/Src/brainx_usbcdc.c:111:6:BrainX_USBCDC_RX_ReceiveVerifiedData	8	static
+../Core/Src/brainx_usbcdc.c:121:6:BrainX_USBCDC_RX_ReceiveData	8	static

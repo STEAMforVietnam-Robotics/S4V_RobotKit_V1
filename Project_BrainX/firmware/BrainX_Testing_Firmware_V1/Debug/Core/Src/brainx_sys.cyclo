@@ -1,0 +1,2 @@
+../Core/Src/brainx_sys.c:12:6:BrainX_DisplayLED	5
+../Core/Src/brainx_sys.c:32:6:BrainX_LogInfo	1

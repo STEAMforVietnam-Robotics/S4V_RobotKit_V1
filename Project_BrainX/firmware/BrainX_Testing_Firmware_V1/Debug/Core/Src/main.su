@@ -1,5 +1,5 @@
 ../Core/Src/main.c:79:5:main	16	static
-../Core/Src/main.c:146:6:SystemClock_Config	88	static
-../Core/Src/main.c:188:6:BrainX_PowerIndicator	16	static
-../Core/Src/main.c:199:6:HAL_UARTEx_RxEventCallback	16	static
-../Core/Src/main.c:213:6:Error_Handler	4	static,ignoring_inline_asm
+../Core/Src/main.c:132:6:SystemClock_Config	88	static
+../Core/Src/main.c:174:6:BrainX_USBCDC_RxCallback	8	static
+../Core/Src/main.c:193:6:HAL_UARTEx_RxEventCallback	16	static
+../Core/Src/main.c:206:6:Error_Handler	4	static,ignoring_inline_asm

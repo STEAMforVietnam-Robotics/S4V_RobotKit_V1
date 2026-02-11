@@ -1,5 +1,5 @@
-../Core/Src/main.c:79:5:main	3
-../Core/Src/main.c:146:6:SystemClock_Config	3
-../Core/Src/main.c:188:6:BrainX_PowerIndicator	5
-../Core/Src/main.c:199:6:HAL_UARTEx_RxEventCallback	2
-../Core/Src/main.c:213:6:Error_Handler	1
+../Core/Src/main.c:79:5:main	1
+../Core/Src/main.c:132:6:SystemClock_Config	3
+../Core/Src/main.c:174:6:BrainX_USBCDC_RxCallback	9
+../Core/Src/main.c:193:6:HAL_UARTEx_RxEventCallback	2
+../Core/Src/main.c:206:6:Error_Handler	1

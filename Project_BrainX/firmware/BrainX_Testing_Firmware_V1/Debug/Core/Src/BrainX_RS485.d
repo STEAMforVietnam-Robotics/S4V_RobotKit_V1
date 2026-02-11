@@ -1,4 +1,4 @@
-Core/Src/BrainX_RS485.o: ../Core/Src/BrainX_RS485.c ../Core/Inc/main.h \
+Core/Src/brainx_rs485.o: ../Core/Src/brainx_rs485.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -28,7 +28,7 @@ Core/Src/BrainX_RS485.o: ../Core/Src/BrainX_RS485.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
- ../Core/Inc/BrainX_RS485.h
+ ../Core/Inc/brainx_rs485.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -59,4 +59,4 @@ Core/Src/BrainX_RS485.o: ../Core/Src/BrainX_RS485.c ../Core/Inc/main.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h:
-../Core/Inc/BrainX_RS485.h:
+../Core/Inc/brainx_rs485.h:

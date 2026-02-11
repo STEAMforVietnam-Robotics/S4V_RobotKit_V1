@@ -65,6 +65,8 @@ void Error_Handler(void);
 #define LOW_GPIO_Port GPIOD
 #define CRG_Pin GPIO_PIN_9
 #define CRG_GPIO_Port GPIOD
+#define OK_Pin GPIO_PIN_10
+#define OK_GPIO_Port GPIOD
 
 /* USER CODE BEGIN Private defines */
 
