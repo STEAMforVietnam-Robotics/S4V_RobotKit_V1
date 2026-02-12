@@ -1,0 +1,338 @@
+Change Component Comment : Designator=R19 Old Comment=1k New Comment=330
+Change Component Comment : Designator=R25 Old Comment=1k New Comment=330
+Added Component: Designator=A1(IFA_Antenna)
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=GND Pin=A1-2
+Added Pin To Net: NetName=GND Pin=A1-2
+Added Pin To Net: NetName=GND Pin=BT1-1
+Added Pin To Net: NetName=NetBT1_2 Pin=BT1-2
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=VFBSMPS Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=VDDRF Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=VDDRF Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=+3.3V Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=+3.3V Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=+3.3V Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=+3.3V Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=+3.3V Pin=C8-2
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=+3.3V Pin=C9-2
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=+3.3V Pin=C10-2
+Added Pin To Net: NetName=GND Pin=C11-1
+Added Pin To Net: NetName=+3.3V Pin=C11-2
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=VDDRF Pin=C12-2
+Added Pin To Net: NetName=GND Pin=C13-1
+Added Pin To Net: NetName=VDDRF Pin=C13-2
+Added Pin To Net: NetName=NRST Pin=C14-1
+Added Pin To Net: NetName=GND Pin=C14-2
+Added Pin To Net: NetName=GND Pin=C15-1
+Added Pin To Net: NetName=NetC15_2 Pin=C15-2
+Added Pin To Net: NetName=GND Pin=C16-1
+Added Pin To Net: NetName=NetC16_2 Pin=C16-2
+Added Pin To Net: NetName=+3.3V Pin=C18-1
+Added Pin To Net: NetName=GND Pin=C18-2
+Added Pin To Net: NetName=GND Pin=C20-1
+Added Pin To Net: NetName=+3.3V Pin=C20-2
+Added Pin To Net: NetName=GND Pin=C21-1
+Added Pin To Net: NetName=+3.3V Pin=C21-2
+Added Pin To Net: NetName=GND Pin=C22-1
+Added Pin To Net: NetName=VIN Pin=C22-2
+Added Pin To Net: NetName=GND Pin=C23-1
+Added Pin To Net: NetName=VIN Pin=C23-2
+Added Pin To Net: NetName=NetC24_1 Pin=C24-1
+Added Pin To Net: NetName=VIN Pin=C25-1
+Added Pin To Net: NetName=GND Pin=C25-2
+Added Pin To Net: NetName=+5V Pin=C26-1
+Added Pin To Net: NetName=GND Pin=C26-2
+Added Pin To Net: NetName=+5V Pin=C27-1
+Added Pin To Net: NetName=GND Pin=C27-2
+Added Pin To Net: NetName=+5V Pin=C28-1
+Added Pin To Net: NetName=GND Pin=C28-2
+Added Pin To Net: NetName=GND Pin=C29-1
+Added Pin To Net: NetName=USART1_RX Pin=C30-2
+Added Pin To Net: NetName=LPUART1_TX Pin=C31-2
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=+3.3V Pin=C?-2
+Added Pin To Net: NetName=GND Pin=D1-K
+Added Pin To Net: NetName=LOW Pin=D2-A
+Added Pin To Net: NetName=CRG Pin=D3-A
+Added Pin To Net: NetName=NetD3_K Pin=D3-K
+Added Pin To Net: NetName=OK Pin=D4-A
+Added Pin To Net: NetName=NetD4_K Pin=D4-K
+Added Pin To Net: NetName=SWDIO Pin=D5-1
+Added Pin To Net: NetName=GND Pin=D5-2
+Added Pin To Net: NetName=SWCLK Pin=D6-1
+Added Pin To Net: NetName=GND Pin=D6-2
+Added Pin To Net: NetName=NetD7_1 Pin=D7-1
+Added Pin To Net: NetName=VIN Pin=D7-2
+Added Pin To Net: NetName=GND Pin=D8-1
+Added Pin To Net: NetName=NetD9_A Pin=D9-A
+Added Pin To Net: NetName=NetD9_K Pin=D9-K
+Added Pin To Net: NetName=+5V Pin=J1-1
+Added Pin To Net: NetName=A1 Pin=J1-2
+Added Pin To Net: NetName=B1 Pin=J1-3
+Added Pin To Net: NetName=GND Pin=J1-4
+Added Pin To Net: NetName=+5V Pin=J2-1
+Added Pin To Net: NetName=A2 Pin=J2-2
+Added Pin To Net: NetName=B2 Pin=J2-3
+Added Pin To Net: NetName=GND Pin=J2-4
+Added Pin To Net: NetName=GND Pin=J3-1
+Added Pin To Net: NetName=NetD7_1 Pin=J3-2
+Added Pin To Net: NetName=GND Pin=JP?-1
+Added Pin To Net: NetName=SWDIO Pin=JP?-2
+Added Pin To Net: NetName=SWCLK Pin=JP?-3
+Added Pin To Net: NetName=+5V Pin=JP?-4
+Added Pin To Net: NetName=VFBSMPS Pin=L1-1
+Added Pin To Net: NetName=VLXSMPS Pin=L1-2
+Added Pin To Net: NetName=VDDRF Pin=L2-2
+Added Pin To Net: NetName=+5V Pin=L4-2
+Added Pin To Net: NetName=+3.3V Pin=Q1-2
+Added Pin To Net: NetName=+3.3V Pin=Q2-2
+Added Pin To Net: NetName=NetD9_A Pin=Q2-3
+Added Pin To Net: NetName=+3.3V Pin=R1-2
+Added Pin To Net: NetName=+3.3V Pin=R2-1
+Added Pin To Net: NetName=NRST Pin=R2-2
+Added Pin To Net: NetName=+3.3V Pin=R3-1
+Added Pin To Net: NetName=+3.3V Pin=R4-1
+Added Pin To Net: NetName=NetD3_K Pin=R4-2
+Added Pin To Net: NetName=+3.3V Pin=R5-1
+Added Pin To Net: NetName=NetD4_K Pin=R5-2
+Added Pin To Net: NetName=GND Pin=R6-1
+Added Pin To Net: NetName=B1 Pin=R6-2
+Added Pin To Net: NetName=+3.3V Pin=R7-1
+Added Pin To Net: NetName=A1 Pin=R7-2
+Added Pin To Net: NetName=A1 Pin=R8-1
+Added Pin To Net: NetName=B1_3485 Pin=R8-2
+Added Pin To Net: NetName=GND Pin=R9-2
+Added Pin To Net: NetName=GND Pin=R10-1
+Added Pin To Net: NetName=B2 Pin=R10-2
+Added Pin To Net: NetName=+3.3V Pin=R11-1
+Added Pin To Net: NetName=A2 Pin=R11-2
+Added Pin To Net: NetName=A2 Pin=R12-1
+Added Pin To Net: NetName=B2 Pin=R12-2
+Added Pin To Net: NetName=VIN Pin=R13-1
+Added Pin To Net: NetName=+5V Pin=R14-1
+Added Pin To Net: NetName=FB Pin=R14-2
+Added Pin To Net: NetName=FB Pin=R16-1
+Added Pin To Net: NetName=GND Pin=R16-2
+Added Pin To Net: NetName=GND Pin=R17-2
+Added Pin To Net: NetName=GND Pin=R18-2
+Added Pin To Net: NetName=NetD9_K Pin=R19-1
+Added Pin To Net: NetName=GND Pin=R19-2
+Added Pin To Net: NetName=LPUART1_TX Pin=R20-1
+Added Pin To Net: NetName=USART1_RX Pin=R21-1
+Added Pin To Net: NetName=GND Pin=R25-2
+Added Pin To Net: NetName=NetBT1_2 Pin=R30-1
+Added Pin To Net: NetName=NRST Pin=R30-2
+Added Pin To Net: NetName=NetC16_2 Pin=U2-1
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=NetA1_1 Pin=U2-3
+Added Pin To Net: NetName=GND Pin=U2-4
+Added Pin To Net: NetName=A1 Pin=U3-1
+Added Pin To Net: NetName=B1_3485 Pin=U3-2
+Added Pin To Net: NetName=GND Pin=U3-3
+Added Pin To Net: NetName=LPUART1_RX Pin=U4-1
+Added Pin To Net: NetName=RE_1 Pin=U4-2
+Added Pin To Net: NetName=DE_1 Pin=U4-3
+Added Pin To Net: NetName=LPUART1_TX Pin=U4-4
+Added Pin To Net: NetName=GND Pin=U4-5
+Added Pin To Net: NetName=A1 Pin=U4-6
+Added Pin To Net: NetName=B1_3485 Pin=U4-7
+Added Pin To Net: NetName=+3.3V Pin=U4-8
+Added Pin To Net: NetName=A2 Pin=U5-1
+Added Pin To Net: NetName=B2 Pin=U5-2
+Added Pin To Net: NetName=GND Pin=U5-3
+Added Pin To Net: NetName=USART1_RX Pin=U6-1
+Added Pin To Net: NetName=RE_2 Pin=U6-2
+Added Pin To Net: NetName=DE_2 Pin=U6-3
+Added Pin To Net: NetName=USART1_TX Pin=U6-4
+Added Pin To Net: NetName=GND Pin=U6-5
+Added Pin To Net: NetName=A2 Pin=U6-6
+Added Pin To Net: NetName=B2 Pin=U6-7
+Added Pin To Net: NetName=+3.3V Pin=U6-8
+Added Pin To Net: NetName=GND Pin=U7-1
+Added Pin To Net: NetName=+3.3V Pin=U7-2
+Added Pin To Net: NetName=+5V Pin=U7-3
+Added Pin To Net: NetName=+3.3V Pin=U7-4
+Added Pin To Net: NetName=FB Pin=U8-4
+Added Pin To Net: NetName=GND Pin=U8-5
+Added Pin To Net: NetName=VIN Pin=U8-7
+Added Pin To Net: NetName=NetC24_1 Pin=U8-8
+Added Pin To Net: NetName=+3.3V Pin=U?-1
+Added Pin To Net: NetName=NRST Pin=U?-7
+Added Pin To Net: NetName=VDDRF Pin=U?-8
+Added Pin To Net: NetName=LPUART1_TX Pin=U?-11
+Added Pin To Net: NetName=LPUART1_RX Pin=U?-12
+Added Pin To Net: NetName=RE_1 Pin=U?-13
+Added Pin To Net: NetName=DE_1 Pin=U?-14
+Added Pin To Net: NetName=+3.3V Pin=U?-20
+Added Pin To Net: NetName=NetC15_2 Pin=U?-21
+Added Pin To Net: NetName=GND Pin=U?-22
+Added Pin To Net: NetName=VDDRF Pin=U?-23
+Added Pin To Net: NetName=LOW Pin=U?-28
+Added Pin To Net: NetName=CRG Pin=U?-29
+Added Pin To Net: NetName=OK Pin=U?-30
+Added Pin To Net: NetName=VFBSMPS Pin=U?-31
+Added Pin To Net: NetName=GND Pin=U?-32
+Added Pin To Net: NetName=VLXSMPS Pin=U?-33
+Added Pin To Net: NetName=+3.3V Pin=U?-34
+Added Pin To Net: NetName=+3.3V Pin=U?-35
+Added Pin To Net: NetName=USART1_RX Pin=U?-36
+Added Pin To Net: NetName=DE_2 Pin=U?-37
+Added Pin To Net: NetName=RE_2 Pin=U?-38
+Added Pin To Net: NetName=SWDIO Pin=U?-39
+Added Pin To Net: NetName=+3.3V Pin=U?-40
+Added Pin To Net: NetName=SWCLK Pin=U?-41
+Added Pin To Net: NetName=USART1_TX Pin=U?-46
+Added Pin To Net: NetName=+3.3V Pin=U?-48
+Added Pin To Net: NetName=GND Pin=U?-49
+Added Pin To Net: NetName=GND Pin=Y1-2
+Added Pin To Net: NetName=GND Pin=Y1-4
+Added Pin To Net: NetName=NetC24_2 Pin=C24-2
+Added Pin To Net: NetName=NetC24_2 Pin=D8-2
+Added Pin To Net: NetName=NetC24_2 Pin=L4-1
+Added Pin To Net: NetName=NetC24_2 Pin=U8-1
+Added Net: Name=NetC24_2
+Added Pin To Net: NetName=NetC29_2 Pin=C29-2
+Added Pin To Net: NetName=NetC29_2 Pin=R15-1
+Added Net: Name=NetC29_2
+Added Pin To Net: NetName=NetC30_1 Pin=C30-1
+Added Pin To Net: NetName=NetC30_1 Pin=Q2-1
+Added Pin To Net: NetName=NetC30_1 Pin=R21-2
+Added Net: Name=NetC30_1
+Added Pin To Net: NetName=NetC31_1 Pin=C31-1
+Added Pin To Net: NetName=NetC31_1 Pin=Q1-1
+Added Pin To Net: NetName=NetC31_1 Pin=R20-2
+Added Net: Name=NetC31_1
+Added Pin To Net: NetName=NetD1_A Pin=D1-A
+Added Pin To Net: NetName=NetD1_A Pin=R1-1
+Added Net: Name=NetD1_A
+Added Pin To Net: NetName=NetD2_K Pin=D2-K
+Added Pin To Net: NetName=NetD2_K Pin=R3-2
+Added Net: Name=NetD2_K
+Added Pin To Net: NetName=NetD10_A Pin=D10-A
+Added Pin To Net: NetName=NetD10_A Pin=Q1-3
+Added Net: Name=NetD10_A
+Added Pin To Net: NetName=NetD10_K Pin=D10-K
+Added Pin To Net: NetName=NetD10_K Pin=R25-1
+Added Net: Name=NetD10_K
+Added Pin To Net: NetName=NetR9_1 Pin=R9-1
+Added Pin To Net: NetName=NetR9_1 Pin=U?-4
+Added Net: Name=NetR9_1
+Added Pin To Net: NetName=NetR13_2 Pin=R13-2
+Added Pin To Net: NetName=NetR13_2 Pin=R17-1
+Added Pin To Net: NetName=NetR13_2 Pin=U8-2
+Added Net: Name=NetR13_2
+Added Pin To Net: NetName=NetR15_2 Pin=R15-2
+Added Pin To Net: NetName=NetR15_2 Pin=U8-3
+Added Net: Name=NetR15_2
+Added Pin To Net: NetName=NetR18_1 Pin=R18-1
+Added Pin To Net: NetName=NetR18_1 Pin=U8-6
+Added Net: Name=NetR18_1
+Added Pin To Net: NetName=NetU?_24 Pin=U?-24
+Added Pin To Net: NetName=NetU?_24 Pin=Y1-3
+Added Net: Name=NetU?_24
+Added Pin To Net: NetName=NetU?_25 Pin=U?-25
+Added Pin To Net: NetName=NetU?_25 Pin=Y1-1
+Added Net: Name=NetU?_25
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component A1
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component BT1 Nut Nhan 2 Chan SMD 3x6x2.5
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C1 Capacitor 0.1 uF +/- 5% 16 V 0402
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C2 Capacitor 0.1 uF +/- 5% 16 V 0402
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C3 Capacitor 0.1 uF +/- 5% 16 V 0402
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C4 Capacitor 0.1 uF +/- 5% 16 V 0402
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C5 Capacitor 0.1 uF +/- 5% 16 V 0402
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C6 Capacitor 0.1 uF +/- 5% 16 V 0402
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C7 Capacitor 0.1 uF +/- 5% 16 V 0402
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C8 Capacitor 0.1 uF +/- 5% 16 V 0402
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C9 Capacitor 0.1 uF +/- 5% 16 V 0402
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C10 Capacitor 0.1 uF +/- 5% 16 V 0402
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C11 Capacitor 0.1 uF +/- 5% 16 V 0402
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C12 Capacitor 0.1 uF +/- 5% 16 V 0402
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C13 Capacitor 0.1 uF +/- 5% 16 V 0402
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C14 100nF
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C15 Capacitor 0.1 uF +/- 5% 16 V 0402
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C16 Capacitor 0.1 uF +/- 5% 16 V 0402
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C18 Capacitor 1uF +/- 10% 16V 0603
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C20 10uF
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C21 100nF
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C22 10uF
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C23 100nF
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C24 100nF
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C25 10uF
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C26 22uF
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C27 22uF
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C28 100nF
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C29 150pF
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C30 100nF
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C31 100nF
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component C? Capacitor 1uF +/- 10% 16V 0603
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component D1 RED
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component D2 RED
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component D3 BLUE
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component D4 GREEN
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component D5 SMLVT3V3
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component D6 SMLVT3V3
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component D7 SS34
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component D8 SS34
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component D9 BLUE
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component D10 BLUE
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component J1 JST_SH1.0
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component J2 JST_SH1.0
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component J3 XT60PW-F
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component JP? JP 1x04
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component L1 LQP15MN3N6B02D
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component L2 1kOhm 100Mhz
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component L3 2.7nH
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component L4 15uH
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component Q1 PNP
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component Q2 PNP
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R1 1k
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R2 10k
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R3 1k
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R4 1k
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R5 1k
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R6 1k
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R7 1k
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R8 120
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R9 10k
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R10 1k
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R11 1k
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R12 120
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R13 100k
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R14 210k
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R15 10k
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R16 40.2k
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R17 24.9k
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R18 10k
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R19 330
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R20 330
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R21 330
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R25 330
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component R30 330
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component U2 DLF162500LT-5028A1
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component U3 PSM712-LF-T7
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component U4 MAX3485ESA+
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component U5 PSM712-LF-T7
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component U6 MAX3485ESA+
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component U7 AMS1117-3.3
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component U8 MP1584EN-LF-Z
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component U? STM32WB55CGU6
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component Y1 NX2016SA-32MHZ

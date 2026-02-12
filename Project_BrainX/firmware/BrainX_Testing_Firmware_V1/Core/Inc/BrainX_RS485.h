@@ -25,10 +25,10 @@ typedef struct {
 	uint16_t GPIO_Receiver_Enable_Pin;
 
 	/* Receiving data buffer */
-	uint8_t rx_buffer[10];
+	uint8_t rxBuffer[10];
 
 	/* Transmitting data buffer */
-	uint8_t tx_buffer[10];
+	uint8_t txBuffer[10];
 
 	/* State of the data analysis process */
 	uint8_t state;
@@ -37,13 +37,13 @@ typedef struct {
 	uint8_t checksum;
 
 	/* Device ID */
-	uint8_t device_id;
+	uint8_t deviceID;
 
 	/* Talking to WHO (target Device ID */
-	uint8_t target_device_id;
+	uint8_t targetDeviceID;
 
 	/* Verified data content */
-	uint8_t data_content;
+	uint8_t dataContent;
 
 	/* Verified data packet */
 	uint8_t data;
@@ -69,7 +69,7 @@ void BrainX_RS485_RX_ReceiveVerifiedData(RS485_Device *device);
 void BrainX_RS485_RX_ReceiveData(RS485_Device *device);
 
 void BrainX_RS485_TX_Enable(RS485_Device *device);
-void BrainX_RS485_TX_SendData(RS485_Device *device, UART_HandleTypeDef *huart, uint8_t target_device_id, uint8_t tx_buffer[10]);
+void BrainX_RS485_TX_SendData(RS485_Device *device, UART_HandleTypeDef *huart, uint8_t targetDeviceID, uint8_t TxBuffer[10]);
 
 
 #endif /* BRAINX_RS485_H_ */

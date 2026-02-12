@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "dma.h"
+#include "tim.h"
 #include "usart.h"
 #include "usb_device.h"
 #include "gpio.h"
@@ -38,12 +39,18 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-RS485_Device brain_uart2;
 
-extern uint8_t usbcdc_rx_flag;
-extern uint8_t usbcdc_rx_ok_flag;
-extern uint8_t data_content;
+RS485_Device powerManagementBoard;
+RS485_Device imuSensorBoard;
+RS485_Device tofSensorBoard;
+RS485_Device bumperSensorBoard;
+
+extern uint8_t usbcdcRxFlag;
+extern uint8_t usbcdcRxOkFlag;
+extern uint8_t dataContent;
 extern uint8_t data;
+
+extern BrainX_Power_Status brainxPowerStatus;
 
 /* USER CODE END PD */
 
@@ -106,12 +113,13 @@ int main(void)
   MX_UART4_Init();
   MX_USB_DEVICE_Init();
   MX_USART3_UART_Init();
+  MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
-  BrainX_RS485_Init(&brain_uart2, 0x10, DE_2_GPIO_Port, DE_2_Pin, RE_2_GPIO_Port, RE_2_Pin);
-  BrainX_RS485_RX_Enable(&brain_uart2);
-//  RS485_TX_Enable(&brain_uart2);
+  BrainX_RS485_Init(&powerManagementBoard, PWR_MNG_BOARD_ID, DE_2_GPIO_Port, DE_2_Pin, RE_2_GPIO_Port, RE_2_Pin);
 
-  HAL_UARTEx_ReceiveToIdle_DMA(&huart2, brain_uart2.rx_buffer, (sizeof(brain_uart2.rx_buffer)/sizeof(brain_uart2.rx_buffer[0])));
+  BrainX_RS485_RX_Enable(&powerManagementBoard);
+
+  HAL_UARTEx_ReceiveToIdle_DMA(&huart2, powerManagementBoard.rxBuffer, (sizeof(powerManagementBoard.rxBuffer)/sizeof(powerManagementBoard.rxBuffer[0])));
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -119,8 +127,19 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+
     /* USER CODE BEGIN 3 */
+
 	  BrainX_USBCDC_RxCallback();
+
+	  if(brainxPowerStatus == LOW){
+		  HAL_TIM_Base_Start_IT(&htim1);
+	  }
+	  else{
+		  HAL_TIM_Base_Stop_IT(&htim1);
+		  BrainX_DisplayLED();
+	  }
+
   }
   /* USER CODE END 3 */
 }
@@ -172,28 +191,35 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 void BrainX_USBCDC_RxCallback(){
-	if(usbcdc_rx_flag){
+	if(usbcdcRxFlag){
 		BrainX_USBCDC_RX_ReceiveData();
-		usbcdc_rx_flag = 0;
+		usbcdcRxFlag = 0;
 	}
-	if(usbcdc_rx_ok_flag){
-		if(data_content == 0x03 && data == 0x00){
-			BrainX_DisplayLED(LOW);
+
+	if(usbcdcRxOkFlag){
+		if(dataContent == PWR_STATUS_ID){
+			switch(data){
+				case 0x00:
+					BrainX_UpdateSystemInfo(LOW);
+					break;
+				case 0x01:
+					BrainX_UpdateSystemInfo(OK);
+					break;
+				case 0x02:
+					BrainX_UpdateSystemInfo(CHARGING);
+					break;
+			}
 		}
-		else if(data_content == 0x03 && data == 0x01){
-			BrainX_DisplayLED(OK);
-		}
-		else if(data_content == 0x03 && data == 0x02){
-			BrainX_DisplayLED(CHARGING);
-		}
-		usbcdc_rx_ok_flag = 0;
+
+		usbcdcRxOkFlag = 0;
+
 	}
 }
 
 void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t DataSize){
 	if (huart->Instance == USART2){
-		BrainX_RS485_RX_ReceiveData(&brain_uart2);
-		HAL_UARTEx_ReceiveToIdle_DMA(&huart2, brain_uart2.rx_buffer, 10);
+		BrainX_RS485_RX_ReceiveData(&powerManagementBoard);
+		HAL_UARTEx_ReceiveToIdle_DMA(&huart2, powerManagementBoard.rxBuffer, 10);
 	}
 }
 

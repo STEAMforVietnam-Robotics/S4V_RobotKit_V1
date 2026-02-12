@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=GND Pin=U8-9
+Added Component: Designator=A1(IFA_Antenna)
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=NetA1_1 Pin=A1-1
+Added Pin To Net: NetName=GND Pin=A1-2
+Added Pin To Net: NetName=GND Pin=A1-2
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component A1

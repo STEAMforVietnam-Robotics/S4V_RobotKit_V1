@@ -31,7 +31,6 @@
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-extern uint8_t usbcdc_rx_buffer[10];
 /* USER CODE END PV */
 
 /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY
@@ -94,7 +93,8 @@ uint8_t UserRxBufferFS[APP_RX_DATA_SIZE];
 uint8_t UserTxBufferFS[APP_TX_DATA_SIZE];
 
 /* USER CODE BEGIN PRIVATE_VARIABLES */
-extern uint8_t usbcdc_rx_flag;
+extern uint8_t usbcdcRxBuffer[10];
+extern uint8_t usbcdcRxFlag;
 /* USER CODE END PRIVATE_VARIABLES */
 
 /**
@@ -263,10 +263,10 @@ static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
   USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);
   USBD_CDC_ReceivePacket(&hUsbDeviceFS);
 
-  memcpy(usbcdc_rx_buffer, UserRxBufferFS, *Len);
+  memcpy(usbcdcRxBuffer, UserRxBufferFS, *Len);
   memset(UserRxBufferFS, '\0', *Len);
 
-  usbcdc_rx_flag = 1;
+  usbcdcRxFlag = 1;
 
   return (USBD_OK);
   /* USER CODE END 6 */

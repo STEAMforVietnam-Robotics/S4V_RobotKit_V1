@@ -1,0 +1,46 @@
+Change Footprint: Footprint Not Found FP-403AE-MFG
+Add Component: Footprint Not Found CAPC1608X90X35ML15T15
+Add Component: Footprint Not Found JP 1x4 DT
+Add Component: Footprint Not Found FP-STM32WB55CGU6-MFG
+Add Pin To Net: Unknown Pin: Pin C17-1
+Add Pin To Net: Unknown Pin: Pin C17-2
+Add Pin To Net: Unknown Pin: Pin D10-1
+Add Pin To Net: Unknown Pin: Pin D10-2
+Add Pin To Net: Unknown Pin: Pin JP1-1
+Add Pin To Net: Unknown Pin: Pin JP1-2
+Add Pin To Net: Unknown Pin: Pin JP1-3
+Add Pin To Net: Unknown Pin: Pin JP1-4
+Add Pin To Net: Unknown Pin: Pin U1-1
+Add Pin To Net: Unknown Pin: Pin U1-4
+Add Pin To Net: Unknown Pin: Pin U1-7
+Add Pin To Net: Unknown Pin: Pin U1-8
+Add Pin To Net: Unknown Pin: Pin U1-11
+Add Pin To Net: Unknown Pin: Pin U1-12
+Add Pin To Net: Unknown Pin: Pin U1-13
+Add Pin To Net: Unknown Pin: Pin U1-14
+Add Pin To Net: Unknown Pin: Pin U1-20
+Add Pin To Net: Unknown Pin: Pin U1-21
+Add Pin To Net: Unknown Pin: Pin U1-22
+Add Pin To Net: Unknown Pin: Pin U1-23
+Add Pin To Net: Unknown Pin: Pin U1-24
+Add Pin To Net: Unknown Pin: Pin U1-25
+Add Pin To Net: Unknown Pin: Pin U1-28
+Add Pin To Net: Unknown Pin: Pin U1-29
+Add Pin To Net: Unknown Pin: Pin U1-30
+Add Pin To Net: Unknown Pin: Pin U1-31
+Add Pin To Net: Unknown Pin: Pin U1-32
+Add Pin To Net: Unknown Pin: Pin U1-33
+Add Pin To Net: Unknown Pin: Pin U1-34
+Add Pin To Net: Unknown Pin: Pin U1-35
+Add Pin To Net: Unknown Pin: Pin U1-36
+Add Pin To Net: Unknown Pin: Pin U1-37
+Add Pin To Net: Unknown Pin: Pin U1-38
+Add Pin To Net: Unknown Pin: Pin U1-39
+Add Pin To Net: Unknown Pin: Pin U1-40
+Add Pin To Net: Unknown Pin: Pin U1-41
+Add Pin To Net: Unknown Pin: Pin U1-46
+Add Pin To Net: Unknown Pin: Pin U1-48
+Add Pin To Net: Unknown Pin: Pin U1-49
+Add Class Member: Failed to add class member : Component C17 Capacitor 1uF +/- 10% 16V 0603
+Add Class Member: Failed to add class member : Component JP1 JP 1x04
+Add Class Member: Failed to add class member : Component U1 STM32WB55CGU6
