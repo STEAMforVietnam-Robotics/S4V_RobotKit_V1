@@ -1,0 +1,9 @@
+Manufacturer=STMicroelectronics
+PartNumber=ESDALC6V1-5M6
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=6
+Version=2.1
+Released=2022-10-25 15:50:14
+Downloaded=2026-02-13 06:53:16
+3D=Y

@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=INA Pin=U1-26
+Removed Pin From Net: NetName=PWM Pin=U1-29
+Added Pin To Net: NetName=PWM Pin=U1-21
+Added Pin To Net: NetName=INA Pin=U1-22
+Added Member To Class: ClassName=S4V_Motor_Driver_Board_V1.0_Schematic Member=Component * J5

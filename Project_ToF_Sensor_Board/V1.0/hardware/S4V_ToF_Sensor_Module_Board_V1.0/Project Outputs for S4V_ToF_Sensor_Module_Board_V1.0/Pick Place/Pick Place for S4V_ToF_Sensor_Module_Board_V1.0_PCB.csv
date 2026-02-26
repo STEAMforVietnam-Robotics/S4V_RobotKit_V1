@@ -1,0 +1,56 @@
+Altium Designer Pick and Place Locations
+D:\Mechatronics\Repositories\Project_S4V_Robot_Kit\Project_ToF_Sensor_Board\V1.0\hardware\S4V_ToF_Sensor_Module_Board_V1.0\Project Outputs for S4V_ToF_Sensor_Module_Board_V1.0\Pick Place\Pick Place for S4V_ToF_Sensor_Module_Board_V1.0_PCB.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       14/02/26
+Time:       13:12
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mm
+
+"Designator","Comment","Layer","Footprint","Center-X(mm)","Center-Y(mm)","Rotation","Description"
+"U8","VL53L0CXV0DH/1","TopLayer","FP-LGA-12-MFG","97,9680","82,9310","0","SENSOR OPTICAL 200CM I2C"
+"B2","ESDALC6V1-5M6","TopLayer","ESDALC6V15M6","90,6780","88,6460","270","STMicroelectronics ESDALC6V1-5M6 Quint Uni-Directional TVS Diode, 30W peak, 6-Pin uQFN"
+"D10","SMAJ5.0A","TopLayer","BOUR-SMA-2_V","96,0120","90,8050","180","SMAJ Transient Voltage Suppressor Diode Series, 3.5 V, -55 to 150 degC, 2-Pin SMA, RoHS, Tape and Reel"
+"BT1","Button_3x4mm_SMD","TopLayer","Button_3x4mm_SMD","81,3830","76,1010","0","Button SMD 3x4mm 2 Pins"
+"C1","20pF","TopLayer","CAP_0603","80,7580","83,9260","270","Capacitor SMD 0603"
+"C2","20pF","TopLayer","CAP_0603","82,5580","83,9510","270","Capacitor SMD 0603"
+"C3","100nF","TopLayer","CAP_0603","81,5080","72,3510","180","Capacitor SMD 0603"
+"C4","10uF","TopLayer","CAP_0603","107,1830","78,9260","180","Capacitor SMD 0603"
+"C5","100nF","TopLayer","CAP_0603","104,1580","78,9260","0","Capacitor SMD 0603"
+"C6","10uF","TopLayer","CAP_0603","111,2830","84,4260","270","Capacitor SMD 0603"
+"C7","100nF","TopLayer","CAP_0603","111,2830","81,4260","90","Capacitor SMD 0603"
+"C8","1uF","TopLayer","CAP_0603","95,5580","71,7760","180","Capacitor SMD 0603"
+"C9","10uF","TopLayer","CAP_0603","84,0330","85,9760","0","Capacitor SMD 0603"
+"C10","100nF","TopLayer","CAP_0603","93,9080","86,2260","180","Capacitor SMD 0603"
+"C11","100nF","TopLayer","CAP_0603","94,9330","77,4010","90","Capacitor SMD 0603"
+"C12","100nF","TopLayer","CAP_0603","83,2830","78,2010","0","Capacitor SMD 0603"
+"C13","100nF","TopLayer","CAP_0603","84,0580","87,4260","0","Capacitor SMD 0603"
+"C14","100nF","TopLayer","CAP_0603","96,5830","77,4010","90","Capacitor SMD 0603"
+"C15","1uF","TopLayer","CAP_0603","101,7830","81,1260","90","Capacitor SMD 0603"
+"C16","100nF","TopLayer","CAP_0603","101,7830","84,1510","270","Capacitor SMD 0603"
+"C17","100nF","TopLayer","CAP_0603","99,4330","80,4510","180","Capacitor SMD 0603"
+"C18","4.7uF","TopLayer","CAP_0603","96,4080","80,4510","0","Capacitor SMD 0603"
+"D3","RED","TopLayer","LED_0603_RED","105,1560","90,5390","90","LED 0603 RED SMD"
+"D4","RED","TopLayer","LED_0603_RED","108,7560","90,5390","90","LED 0603 RED SMD"
+"J1","JST_SH1.0","TopLayer","JST_SM04B-SRSS-TB(LF)(SN)","102,6080","73,7135","0","Connector Header Surface Mount, Right Angle 4 position 0.039 (1.00mm)"
+"J2","JST_SH1.0","TopLayer","JST_SM04B-SRSS-TB(LF)(SN)","110,2830","73,7135","0","Connector Header Surface Mount, Right Angle 4 position 0.039 (1.00mm)"
+"JP1","JP 1x04","TopLayer","JP_1x4_DT","85,5980","90,9320","0","C?m"
+"R1","3.3k","TopLayer","RES_0603","98,9330","85,9760","90","Resistor SMD 0603"
+"R2","3.3k","TopLayer","RES_0603","97,3080","85,9510","90","Resistor SMD 0603"
+"R3","10k","TopLayer","RES_0603","98,2580","77,4010","270","Resistor SMD 0603"
+"R4","10k","TopLayer","RES_0603","83,0330","73,8010","0","Resistor SMD 0603"
+"R5","330","TopLayer","RES_0603","80,0080","73,8010","180","Resistor SMD 0603"
+"R6","1k","TopLayer","RES_0603","93,3830","72,5010","90","Resistor SMD 0603"
+"R7","1k","TopLayer","RES_0603","93,3830","75,5260","270","Resistor SMD 0603"
+"R9","1k","TopLayer","RES_0603","106,4810","90,5140","90","Resistor SMD 0603"
+"R10","1k","TopLayer","RES_0603","110,0560","90,5140","90","Resistor SMD 0603"
+"R11","1k","TopLayer","RES_0603","113,3060","90,5390","90","Resistor SMD 0603"
+"U1","STM32F103C8T6","TopLayer","STM-LQFP48_L","88,9830","82,2010","0","ARM Cortex-M3 32-bit MCU, 64 KB Flash, 20 KB Internal RAM, 37 I/Os, 48-pin LQFP, -40 to 85 degC, Tray"
+"U2","AMS1117-3.3","TopLayer","FP-AMS1117-IPC_C","106,5830","83,0510","0","LDO Voltage Regulators 1A, 3.3V"
+"U3","MAX3485ESA+","TopLayer","FP-S8-5-MFG","88,8580","73,8760","0","IC TXRX RS485/422 10MBPS 8SOIC"
+"U4","PSM712-LF-T7","TopLayer","PRKT-SOT23-3_V","95,8584","74,1993","180","TVS Array - Asymmetrical Data Line Protector, 600 W, 7.5 V, -55 to 150 degC, 3-Pin SOT23, RoHS, Tape and Reel"
+"X1","8MHz","TopLayer","XTAL_3225","81,3080","80,5260","0","Crystal SMD 24MHz 10PPM 7pF 3225"
+"D5","GREEN","TopLayer","LED_0603_GREEN","111,9550","90,5370","90","LED 0603 GREEN SMD"

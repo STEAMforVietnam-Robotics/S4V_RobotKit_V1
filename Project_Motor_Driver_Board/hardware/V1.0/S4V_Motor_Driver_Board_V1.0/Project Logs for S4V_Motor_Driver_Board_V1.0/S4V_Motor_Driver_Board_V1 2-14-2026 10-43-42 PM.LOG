@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=R7 Old Footprint=RES_0603 New Footprint=RES_0402
+Change Component Footprint: Designator=R10 Old Footprint=RES_0603 New Footprint=RES_0402
+Change Component Footprint: Designator=R11 Old Footprint=RES_0603 New Footprint=RES_0402
+Added Member To Class: ClassName=Sheet1 Member=Component R10 1k

@@ -1,0 +1,17 @@
+Add Component: Footprint Not Found ESDALC6V15M6
+Added Component: Designator=J1(JST_SM04B-SRSS-TB(LF)(SN))
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/SM04B-SRSS-TB(LF)(SN)/JST/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "JST Sales"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SM04B-SRSS-TB(LF)(SN)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SM04B-SRSS-TB(LF)(SN)/JST/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin B1-2
+Add Pin To Net: Unknown Pin: Pin B1-3
+Add Pin To Net: Unknown Pin: Pin B1-4
+Added Pin To Net: NetName=+5V Pin=J1-1
+Added Pin To Net: NetName=A Pin=J1-2
+Added Pin To Net: NetName=B Pin=J1-3
+Added Pin To Net: NetName=GND Pin=J1-4
+Add Class Member: Failed to add class member : Component B1 ESDALC6V1-5M6
+Added Member To Class: ClassName=Sheet1 Member=Component J1 SM04B-SRSS-TB(LF)(SN)

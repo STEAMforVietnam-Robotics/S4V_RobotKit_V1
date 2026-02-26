@@ -1,0 +1,24 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: S4V_Motor_Driver_Board_V1.0_PCB.PcbDoc   2/15/2026  3:54:29 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII Plated RoundHoles File : S4V_Motor_Driver_Board_V1.0_PCB-RoundHoles-Plated.TXT
+ASCII Non-Plated RoundHoles File : S4V_Motor_Driver_Board_V1.0_PCB-RoundHoles-NonPlated.TXT
+ASCII Plated SlotHoles File : S4V_Motor_Driver_Board_V1.0_PCB-SlotHoles-Plated.TXT
+ASCII Non-Plated SlotHoles File : S4V_Motor_Driver_Board_V1.0_PCB-SlotHoles-NonPlated.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.3mm (12mil)                                             Round             267       PTH        564.06mm (22.21inch)
+T2      0.4mm (16mil)                                             Round             2         PTH        12.13mm (0.48inch)
+T3      0.6mm (24mil)                                             Slot              4         PTH        36.94mm (1.45inch)
+T4      1.016mm (40mil)                                           Round             4         PTH        7.37mm (0.29inch)
+T5      1.1mm (43mil)                                             Round             4         PTH        7.62mm (0.30inch)
+T6      3.2mm (126mil)                                            Round             4         PTH        127.93mm (5.04inch)
+T7      0.6mm (24mil)                                             Round             1         NPTH       0.00mm (0.00inch)
+T8      0.6mm (24mil)                                             Slot              1         NPTH       0.25mm (0.01inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              287
+
+Total Processing Time (hh:mm:ss) : 00:00:00

@@ -1,0 +1,18 @@
+.ESDALC6V1-5M6 :1 ;STMicroelectronics ESDALC6V1-5M6 Quint Uni-Directional TVS Diode, 30W peak, 6-Pin uQFN
+ESDALC6V15M6
+*STM IC
+*NGS
+*PLB 1="I/O1" 2="GND" 3="I/O2" 4="I/O3" 5="I/O4" 6="I/O5"
+*MXP 6
+*DFN ESDALC6V1-5M6
+~!Manufacturer_Name (STMicroelectronics)
+~!Manufacturer_Part_Number (ESDALC6V1-5M6)
+~!Mouser Part Number (511-ESDALC6V1-5M6)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/STMicroelectronics/ESDALC6V1-5M6?qs=riAxU6JNBCsF7CaldDOuJw%3D%3D)
+~!Arrow Part Number (ESDALC6V1-5M6)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/esdalc6v1-5m6/stmicroelectronics?utm_currency=USD&region=nac)
+~!Link Datasheet (https://www.st.com/resource/en/datasheet/esdalc6v1-5m6.pdf)
+~!Height (0.65mm)
+~!3D_Model (ESDALC6V1-5M6)
+ESDALC6V1-5M6
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 

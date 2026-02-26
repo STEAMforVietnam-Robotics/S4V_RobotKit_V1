@@ -217,7 +217,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=VETGIUWR
 
 [Document11]
 DocumentPath=..\..\..\..\..\..\Altium\Altium-Libraly-main\Altium-Libraly-main\Header.SchLib
@@ -234,10 +234,99 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
+DocumentUniqueId=ATJBLIHX
+
+[Document12]
+DocumentPath=Job2.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
 DocumentUniqueId=
 
 [GeneratedDocument1]
+DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\BOM\Bill of Materials-S4V_Robot_Brain_V2.0_Schematic.xlsx
+DItemRevisionGUID=
+
+[GeneratedDocument2]
 DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\Design Rule Check - S4V_Robot_Brain_V2.html
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\Pick Place\Pick Place for S4V_Robot_Brain_V2.0_PCB.csv
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\Pick Place\Pick Place for S4V_Robot_Brain_V2.0_PCB.txt
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\NC Drill\S4V_Robot_Brain_V2.0_PCB-RoundHoles-Plated.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\NC Drill\S4V_Robot_Brain_V2.0_PCB-SlotHoles-Plated.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\NC Drill\S4V_Robot_Brain_V2.0_PCB.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\NC Drill\S4V_Robot_Brain_V2.0_PCB.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\GerberX2\S4V_Robot_Brain_V2.0_PCB_Copper_Signal_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\GerberX2\S4V_Robot_Brain_V2.0_PCB_Copper_Signal_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\GerberX2\S4V_Robot_Brain_V2.0_PCB_Legend_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\GerberX2\S4V_Robot_Brain_V2.0_PCB_Legend_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\GerberX2\S4V_Robot_Brain_V2.0_PCB_NPTH_Drill.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\GerberX2\S4V_Robot_Brain_V2.0_PCB_Paste_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\GerberX2\S4V_Robot_Brain_V2.0_PCB_Paste_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\GerberX2\S4V_Robot_Brain_V2.0_PCB_Profile.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\GerberX2\S4V_Robot_Brain_V2.0_PCB_PTH_Drill.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\GerberX2\S4V_Robot_Brain_V2.0_PCB_Soldermask_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for S4V_Robot_Brain_V2.0\GerberX2\S4V_Robot_Brain_V2.0_PCB_Soldermask_Top.gbr
 DItemRevisionGUID=
 
 [Configuration1]

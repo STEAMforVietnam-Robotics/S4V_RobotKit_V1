@@ -1,0 +1,8 @@
+Change Component Comment : Designator=- Old Comment=J? New Comment=J5
+Change Component Designator: OldDesignator=- NewDesignator=*
+Added Component: Designator=*(PCBComponent_1)
+Added Pin To Net: NetName=NetU4_2 Pin=*-1
+Added Pin To Net: NetName=NetU4_23 Pin=*-2
+Change Net Name : Old Net Name=NetU4_2 New Net Name=OUTA
+Change Net Name : Old Net Name=NetU4_23 New Net Name=OUTB
+Added Member To Class: ClassName=S4V_Motor_Driver_Board_V1.0_Schematic Member=Component * J6

@@ -1,0 +1,13 @@
+Added Component: Designator=Q1(AOD409)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "AOD409"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/aod409/alpha-and-omega-semiconductor?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.aosmd.com/res/data_sheets/AOD409.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "2.4mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Alpha & Omega Semiconductors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "AOD409"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=+12V Pin=Q1-2
+Added Pin To Net: NetName=VIN Pin=Q1-3
+Added Member To Class: ClassName=S4V_Motor_Driver_Board_V1.0_Schematic Member=Component Q1 AOD409

@@ -1,0 +1,28 @@
+Removed Pin From Net: NetName=+3.3V Pin=D4-A
+Removed Pin From Net: NetName=+3.3V Pin=D5-A
+Change Component Footprint: Designator=D5 Old Footprint=LED_0603_GREEN New Footprint=LED-3MM-GREEN
+Change Component Footprint: Designator=D4 Old Footprint=LED_0603_RED New Footprint=LED-3MM-RED
+Change Component Comment : Designator=D5 Old Comment=GREEN New Comment=LED 3mm
+Change Component Comment : Designator=D4 Old Comment=RED New Comment=LED 3mm
+Change component parameters: Designator = "D4" ("D4"); Footprint = "LED_0603_RED"; UniqueID = "\WFVSXCYC" ("\WFVSXCYC")
+Change component parameters (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ma_Hang"; Value = "MH003892"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ten_Linh_Kien"; Value = "Led 3MM Ph? Ð? (10c)"; VariantName = "[No Variations]"
+Change component parameters: Designator = "D5" ("D5"); Footprint = "LED_0603_GREEN"; UniqueID = "\CIAGGYGJ" ("\CIAGGYGJ")
+Change component parameters (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ma_Hang"; Value = "MH001054"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ten_Linh_Kien"; Value = "Led 3MM Ph? Xanh (10c)"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3.3V Pin=D4-1
+Added Pin To Net: NetName=+3.3V Pin=D5-1
+Added Pin To Net: NetName=NetD4_2 Pin=D4-2
+Added Pin To Net: NetName=NetD4_2 Pin=R12-1
+Added Net: Name=NetD4_2
+Added Pin To Net: NetName=NetD5_2 Pin=D5-2
+Added Pin To Net: NetName=NetD5_2 Pin=R14-1
+Added Net: Name=NetD5_2

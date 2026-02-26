@@ -1,0 +1,4 @@
+../MIDWARE/FEE/FEE.c:13:19:FEE_Write	1104	static
+../MIDWARE/FEE/FEE.c:50:6:FEE_Read	32	static
+../MIDWARE/FEE/FEE.c:59:6:FEE_WriteData	56	dynamic
+../MIDWARE/FEE/FEE.c:66:6:FEE_ReadData	56	dynamic

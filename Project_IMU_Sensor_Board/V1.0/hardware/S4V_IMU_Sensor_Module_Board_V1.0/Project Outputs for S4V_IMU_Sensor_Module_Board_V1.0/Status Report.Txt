@@ -1,0 +1,10 @@
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Schematic Document [S4V_IMU_Sensor_Module_Board_V1.0_Schematic.SchDoc]
+   Generated File[Bill of Materials-S4V_IMU_Sensor_Module_Board_V1.0_Schematic.xlsx]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 11:08:08 PM On 2/13/2026

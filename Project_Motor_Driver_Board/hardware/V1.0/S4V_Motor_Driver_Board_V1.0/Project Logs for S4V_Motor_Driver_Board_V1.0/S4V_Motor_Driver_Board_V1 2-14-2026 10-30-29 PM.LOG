@@ -1,0 +1,13 @@
+Added Component: Designator=B1(ESDALC6V15M6)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "ESDALC6V1-5M6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/esdalc6v1-5m6/stmicroelectronics?utm_currency=USD&region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.st.com/resource/en/datasheet/esdalc6v1-5m6.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "0.65mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "STMicroelectronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ESDALC6V1-5M6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "511-ESDALC6V1-5M6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/ESDALC6V1-5M6?qs=riAxU6JNBCsF7CaldDOuJw%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=B1-2
+Added Pin To Net: NetName=SWCLK Pin=B1-3
+Added Pin To Net: NetName=SWDIO Pin=B1-4
+Added Member To Class: ClassName=Sheet1 Member=Component B1 ESDALC6V1-5M6

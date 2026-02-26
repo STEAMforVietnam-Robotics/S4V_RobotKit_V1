@@ -1,0 +1,10 @@
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Schematic Document [S4V_Motor_Driver_Board_V1.0_Schematic.SchDoc]
+   Generated File[Bill of Materials-S4V_Motor_Driver_Board_V1.0_Schematic.xlsx]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 4:05:19 PM On 2/15/2026

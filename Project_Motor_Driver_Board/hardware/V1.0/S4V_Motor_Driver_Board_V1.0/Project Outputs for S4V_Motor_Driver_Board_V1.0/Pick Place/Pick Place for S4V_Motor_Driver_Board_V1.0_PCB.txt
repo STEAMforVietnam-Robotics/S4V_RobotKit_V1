@@ -1,0 +1,69 @@
+Altium Designer Pick and Place Locations
+D:\Mechatronics\Repositories\Project_S4V_Robot_Kit\Project_Motor_Driver_Board\hardware\V1.0\S4V_Motor_Driver_Board_V1.0\Project Outputs for S4V_Motor_Driver_Board_V1.0\Pick Place\Pick Place for S4V_Motor_Driver_Board_V1.0_PCB.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       15/02/26
+Time:       16:05
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mm
+
+Designator Comment               Layer    Footprint                 Center-X(mm) Center-Y(mm) Rotation Description                                                                                                     
+J6         PAD_HANDSOLDER        TopLayer PCBComponent_1            30,7340mm    62,6110mm    90       "HandSolder Pad for PWR IN"                                                                                     
+C22        100nF                 TopLayer CAP_0603                  64,9012mm    33,5643mm    0        "Capacitor SMD 0603"                                                                                            
+C21        10uF                  TopLayer CAP_0603                  64,8647mm    32,1501mm    0        "Capacitor SMD 0603"                                                                                            
+C11        220uF                 TopLayer tu_nhom_8_(f)             44,1960mm    49,1490mm    270      Dán                                                                                                             
+R7         1k                    TopLayer RES_0402                  41,5290mm    69,7230mm    315      "Resistor SMD 0402"                                                                                             
+J10        PAD_HANDSOLDER        TopLayer PCBComponent_1            73,1520mm    40,3860mm    90       "HandSolder Pad for PWR IN"                                                                                     
+Q1         AOD409                TopLayer AOD409                    65,2780mm    49,6570mm    180      "60V P-Channel MOSFET"                                                                                          
+R10        1k                    TopLayer RES_0402                  40,5130mm    54,8640mm    225      "Resistor SMD 0402"                                                                                             
+B1         ESDALC6V1-5M6         TopLayer ESDALC6V15M6              40,5999mm    30,4229mm    180      "STMicroelectronics ESDALC6V1-5M6 Quint Uni-Directional TVS Diode, 30W peak, 6-Pin uQFN"                        
+J1         SM04B-SRSS-TB(LF)(SN) TopLayer JST_SM04B-SRSS-TB(LF)(SN) 72,4225mm    31,4720mm    90       "Connector Header Surface Mount, Right Angle 4 position 0.039 (1.00mm)"                                         
+X1         8MHz                  TopLayer XTAL_3225                 51,8160mm    37,2110mm    90       "Crystal SMD 24MHz 10PPM 7pF 3225"                                                                              
+U5         AMS1117-3.3           TopLayer FP-AMS1117-IPC_C          62,9920mm    38,3540mm    90       "LDO Voltage Regulators 1A, 3.3V"                                                                               
+U4         VNH5050A-E            TopLayer SOP50P1030X247-39N        38,1530mm    62,7020mm    90       "- Motor Driver Power MOSFET Parallel, PWM PowerSSO-36 TP"                                                      
+U3         MAX3485ESA+           TopLayer FP-S8-5-MFG               58,0390mm    29,2100mm    0        "IC TXRX RS485/422 10MBPS 8SOIC"                                                                                
+U2         PSM712-LF-T7          TopLayer PRKT-SOT23-3_V            65,2780mm    28,9560mm    180      "TVS Array - Asymmetrical Data Line Protector, 600 W, 7.5 V, -55 to 150 degC, 3-Pin SOT23, RoHS, Tape and Reel" 
+U1         STM32F103C8T6         TopLayer STM-LQFP48_L              43,8540mm    36,7230mm    180      "ARM Cortex-M3 32-bit MCU, 64 KB Flash, 20 KB Internal RAM, 37 I/Os, 48-pin LQFP, -40 to 85 degC, Tray"         
+R14        1k                    TopLayer RES_0603                  30,3530mm    51,9430mm    90       "Resistor SMD 0603"                                                                                             
+R13        1k                    TopLayer RES_0603                  71,3740mm    50,0380mm    180      "Resistor SMD 0603"                                                                                             
+R12        1k                    TopLayer RES_0603                  30,3530mm    47,1170mm    270      "Resistor SMD 0603"                                                                                             
+R11        1k                    TopLayer RES_0402                  38,7350mm    69,8500mm    135      "Resistor SMD 0402"                                                                                             
+R9         1k                    TopLayer RES_0603                  34,6710mm    27,1780mm    0        "Resistor SMD 0603"                                                                                             
+R8         5.1k                  TopLayer RES_0603                  28,1472mm    30,8670mm    180      "Resistor SMD 0603"                                                                                             
+R6         5.1k                  TopLayer RES_0603                  27,9400mm    43,3070mm    180      "Resistor SMD 0603"                                                                                             
+R5         330                   TopLayer RES_0603                  37,2110mm    46,9900mm    0        "Resistor SMD 0603"                                                                                             
+R4         10k                   TopLayer RES_0603                  34,4170mm    46,9900mm    180      "Resistor SMD 0603"                                                                                             
+R3         10k                   TopLayer RES_0603                  48,6410mm    30,3530mm    0        "Resistor SMD 0603"                                                                                             
+R2         1k                    TopLayer RES_0603                  62,7380mm    30,6070mm    270      "Resistor SMD 0603"                                                                                             
+R1         1k                    TopLayer RES_0603                  62,7380mm    27,3050mm    90       "Resistor SMD 0603"                                                                                             
+JP1        "JP 1x04"             TopLayer JP_1x4_DT                 43,3070mm    27,5590mm    0        C?m                                                                                                             
+J2         DX07S016JA3R1500      TopLayer FP-DX07S016JA3R1500-MFG   29,2710mm    37,0840mm    270      "CONN RCP USB2.0 TYP C 24P SMD RA"                                                                              
+D5         "LED 3mm"             TopLayer LED-3MM-GREEN             27,8130mm    51,9430mm    270      C?m                                                                                                             
+D4         "LED 3mm"             TopLayer LED-3MM-RED               27,6860mm    47,1170mm    90       C?m                                                                                                             
+D3         SMAJ15A               TopLayer FP-SMA-MFG                72,1360mm    47,3710mm    0        "TVS DIODE 15V 24.4V SMA"                                                                                       
+D2         SZBZX84C15ET3G        TopLayer ONSC-SOT-23-3-318-08_V    59,7560mm    51,2920mm    90       "Zener Voltage Regulator, 225 mW, 3-Pin SOT-23, Pb-Free, Tape and Reel"                                         
+D1         RED                   TopLayer LED_0603_RED              34,6710mm    28,7020mm    0        "LED 0603 RED SMD"                                                                                              
+CR1        USBLC6-2SC6           TopLayer SOT23-6L_STM              35,6870mm    36,7030mm    0        "ESD Protection for USB 2.0 High Speed"                                                                         
+C20        100nF                 TopLayer CAP_0805                  45,5930mm    65,1510mm    180      "Capacitor SMD 0805"                                                                                            
+C19        10uF                  TopLayer CAP_0805                  45,5930mm    62,6110mm    180      "Capacitor SMD 0805"                                                                                            
+C18        220uF                 TopLayer tu_nhom_8_(f)             53,0860mm    49,1490mm    270      Dán                                                                                                             
+C17        100nF                 TopLayer CAP_0805                  58,2930mm    40,3860mm    270      "Capacitor SMD 0805"                                                                                            
+C16        10uF                  TopLayer CAP_0805                  58,2930mm    36,1950mm    90       "Capacitor SMD 0805"                                                                                            
+C15        100nF                 TopLayer CAP_0805                  67,5640mm    36,0680mm    90       "Capacitor SMD 0805"                                                                                            
+C14        10uF                  TopLayer CAP_0805                  67,5640mm    40,2590mm    270      "Capacitor SMD 0805"                                                                                            
+C13        100nF                 TopLayer CAP_0603                  50,6730mm    33,2740mm    90       "Capacitor SMD 0603"                                                                                            
+C12        1uF                   TopLayer CAP_0603                  49,9110mm    41,7830mm    270      "Capacitor SMD 0603"                                                                                            
+C10        100nF                 TopLayer CAP_0603                  38,2270mm    41,4020mm    270      "Capacitor SMD 0603"                                                                                            
+C9         100nF                 TopLayer CAP_0603                  48,6410mm    32,6390mm    180      "Capacitor SMD 0603"                                                                                            
+C8         100nF                 TopLayer CAP_0603                  48,3870mm    41,7830mm    270      "Capacitor SMD 0603"                                                                                            
+C7         100nF                 TopLayer CAP_0603                  39,0393mm    32,5631mm    0        "Capacitor SMD 0603"                                                                                            
+C6         10uF                  TopLayer CAP_0603                  39,7510mm    41,4020mm    270      "Capacitor SMD 0603"                                                                                            
+C5         100nF                 TopLayer CAP_0603                  35,6870mm    39,6240mm    0        "Capacitor SMD 0603"                                                                                            
+C4         100nF                 TopLayer CAP_0603                  35,8140mm    45,4660mm    0        "Capacitor SMD 0603"                                                                                            
+C3         20pF                  TopLayer CAP_0603                  52,3240mm    39,8780mm    180      "Capacitor SMD 0603"                                                                                            
+C2         20pF                  TopLayer CAP_0603                  54,4830mm    36,3220mm    270      "Capacitor SMD 0603"                                                                                            
+C1         1uF                   TopLayer CAP_0603                  60,4520mm    32,7660mm    0        "Capacitor SMD 0603"                                                                                            
+BT1        Button_3x4mm_SMD      TopLayer Button_3x4mm_SMD          35,8730mm    49,2760mm    180      "Button SMD 3x4mm 2 Pins"                                                                                       

@@ -1,0 +1,17 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: S4V_ToF_Sensor_Module_Board_V1.0_PCB.PcbDoc   2/14/2026  1:13:00 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII Plated RoundHoles File : S4V_ToF_Sensor_Module_Board_V1.0_PCB-Plated.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.3mm (12mil)                                             Round             76        PTH        276.39mm (10.88inch)
+T2      0.4mm (16mil)                                             Round             3         PTH        8.14mm (0.32inch)
+T3      1.1mm (43mil)                                             Round             4         PTH        7.62mm (0.30inch)
+T4      3.1mm (122mil)                                            Round             2         PTH        45.13mm (1.78inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              85
+
+Total Processing Time (hh:mm:ss) : 00:00:01

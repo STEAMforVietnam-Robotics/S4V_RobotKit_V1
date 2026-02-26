@@ -1,0 +1,21 @@
+# Altium Designer rác
+**/History/
+**/__Previews/
+*.PcbDoc.Zip
+*.SchDocPreview
+*.LOG
+*.DXF
+*.step
+*.pdf
+Project\ Outputs\ for*\
+
+# STM32 / Keil / CubeIDE rác
+**/Debug/
+**/Release/
+*.list
+*.map
+*.o
+*.su
+*.cyclo
+*.bak
+*.dep

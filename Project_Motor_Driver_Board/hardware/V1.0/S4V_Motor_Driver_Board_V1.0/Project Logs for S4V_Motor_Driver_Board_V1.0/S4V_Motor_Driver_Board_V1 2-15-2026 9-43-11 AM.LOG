@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=RE Pin=U1-19
+Removed Pin From Net: NetName=DE Pin=U1-20
+Removed Pin From Net: NetName=OK Pin=U1-45
+Removed Pin From Net: NetName=FAULT Pin=U1-46
+Added Pin To Net: NetName=OK Pin=U1-19
+Added Pin To Net: NetName=FAULT Pin=U1-20
+Added Pin To Net: NetName=RE Pin=U1-45
+Added Pin To Net: NetName=DE Pin=U1-46
+Added Member To Class: ClassName=S4V_Motor_Driver_Board_V1.0_Schematic Member=Component * J5

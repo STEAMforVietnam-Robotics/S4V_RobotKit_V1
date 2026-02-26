@@ -1,0 +1,24 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: S4V_IMU_Sensor_Module_Board_V1.0_PCB.PcbDoc   2/13/2026  11:08:05 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII Plated RoundHoles File : S4V_IMU_Sensor_Module_Board_V1.0_PCB-RoundHoles-Plated.TXT
+ASCII Non-Plated RoundHoles File : S4V_IMU_Sensor_Module_Board_V1.0_PCB-RoundHoles-NonPlated.TXT
+ASCII Plated SlotHoles File : S4V_IMU_Sensor_Module_Board_V1.0_PCB-SlotHoles-Plated.TXT
+ASCII Non-Plated SlotHoles File : S4V_IMU_Sensor_Module_Board_V1.0_PCB-SlotHoles-NonPlated.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.2mm (8mil)                                              Round             4         PTH        3.30mm (0.13inch)
+T2      0.3mm (12mil)                                             Round             83        PTH        249.76mm (9.83inch)
+T3      0.4mm (16mil)                                             Round             3         PTH        42.52mm (1.67inch)
+T4      0.6mm (24mil)                                             Slot              4         PTH        36.94mm (1.45inch)
+T5      1.1mm (43mil)                                             Round             4         PTH        7.62mm (0.30inch)
+T6      3.1mm (122mil)                                            Round             4         PTH        93.22mm (3.67inch)
+T7      0.6mm (24mil)                                             Round             1         NPTH       0.00mm (0.00inch)
+T8      0.6mm (24mil)                                             Slot              1         NPTH       0.25mm (0.01inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              104
+
+Total Processing Time (hh:mm:ss) : 00:00:00

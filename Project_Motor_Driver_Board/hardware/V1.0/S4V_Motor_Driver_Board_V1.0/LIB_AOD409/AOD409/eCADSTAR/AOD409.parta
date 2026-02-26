@@ -1,0 +1,72 @@
+(Japanese_coding: sjis)
+(function "ECS_3554347"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-10-03-14:27:25)
+    (utime 2024-11-04-09:58:48)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+        (port "3" (symbPinId 3) (portType INOUT))
+    )
+    (property "symbolName" "AOD409")
+)
+
+
+(pinAssign "ECS_3554347"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-10-03-14:27:25)
+    (utime 2024-11-04-09:58:48)
+    (interface
+        (port "1" (symbPinId 1) (portName "G") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "D") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "S") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_3554347")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+                (port "3" (match "3"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "AOD409")
+)
+
+
+(part "AOD409"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-10-03-14:27:25)
+    (utime 2024-11-04-09:58:48)
+    (packageRef "AOD409")
+    (pinAssignRef "ECS_3554347")
+    (interface
+        (port "1" (symbPinId 1) (portName "G") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "D") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "S") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "Q")
+    (property "description" "60V P-Channel MOSFET")
+    (property "Manufacturer_Name" "Alpha & Omega Semiconductors")
+    (property "Manufacturer_Part_Number" "AOD409")
+    (property "Mouser_Part_Number" "")
+    (property "Mouser_Price/Stock" "")
+    (property "Arrow_Part_Number" "AOD409")
+    (property "Arrow_Price/Stock" "https://www.arrow.com/en/products/aod409/alpha-and-omega-semiconductor?region=nac")
+    (property "Datasheet_Link" "http://www.aosmd.com/res/data_sheets/AOD409.pdf")
+    (property "compAreaTopHeight" 2.4)
+)
+
+

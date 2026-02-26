@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=OUTA Pin=*-1
+Removed Pin From Net: NetName=OUTB Pin=*-2
+Removed Member From Class: ClassName=S4V_Motor_Driver_Board_V1.0_Schematic Member=*
+Change Component Comment : Designator=J10 Old Comment= New Comment=PAD_HANDSOLDER
+Added Component: Designator=J6(PCBComponent_1)
+Added Pin To Net: NetName=OUTA Pin=J6-1
+Added Pin To Net: NetName=OUTB Pin=J6-2
+Added Member To Class: ClassName=S4V_Motor_Driver_Board_V1.0_Schematic Member=Component J6 PAD_HANDSOLDER

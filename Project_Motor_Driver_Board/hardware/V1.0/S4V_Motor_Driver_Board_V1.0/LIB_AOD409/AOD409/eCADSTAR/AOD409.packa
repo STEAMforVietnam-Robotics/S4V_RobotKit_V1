@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "AOD409"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-11-01-13:36:00)
+    (mountForm default
+        (footprintRef "AOD409")
+        (spec "System")
+    )
+)

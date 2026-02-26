@@ -1,0 +1,9 @@
+Manufacturer=Alpha & Omega Semiconductors
+PartNumber=AOD409
+PartCategory=MOSFET (P-Channel)
+PackageCategory=Other
+PinCount=3
+Version=1.2
+Released=2019-10-03 14:27:25
+Downloaded=2026-02-14 14:19:06
+3D=Y

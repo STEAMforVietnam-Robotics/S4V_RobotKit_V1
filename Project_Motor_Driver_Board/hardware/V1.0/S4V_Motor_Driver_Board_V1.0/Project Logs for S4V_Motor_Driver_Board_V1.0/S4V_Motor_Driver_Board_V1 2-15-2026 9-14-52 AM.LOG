@@ -1,0 +1,31 @@
+Removed Pin From Net: NetName=VIN Pin=C18-1
+Removed Pin From Net: NetName=VIN Pin=C19-2
+Removed Pin From Net: NetName=VIN Pin=C?-1
+Removed Pin From Net: NetName=GND Pin=C?-2
+Removed Pin From Net: NetName=VIN Pin=D2-3
+Removed Pin From Net: NetName=VIN Pin=Q1-3
+Removed Member From Class: ClassName=S4V_Motor_Driver_Board_V1.0_Schematic Member=C?
+Change Component Footprint: Designator=C18 Old Footprint=CAPAE120103X105N New Footprint=tu nhom 8 (f)
+Change component parameters: Designator = "C18" ("C18"); Footprint = "CAPAE120103X105N"; UniqueID = "\SBKOTULB" ("\SBKOTULB")
+Change component parameters (AddParameter): Name = "Chung_Loai"; Value = "Dán"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ma_Hang"; Value = "MH002221"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ten_Linh_Kien"; Value = "T? Nhôm 220uF 25V"; VariantName = "[No Variations]"
+Added Component: Designator=C11(tu nhom 8 (f))
+Add component (AddParameter): Name = "Chung_Loai"; Value = "Dán"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH002221"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "T? Nhôm 220uF 25V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C11-2
+Added Pin To Net: NetName=NetC11_1 Pin=C11-1
+Added Pin To Net: NetName=NetC11_1 Pin=C18-1
+Added Pin To Net: NetName=NetC11_1 Pin=C19-2
+Added Pin To Net: NetName=NetC11_1 Pin=D2-3
+Added Pin To Net: NetName=NetC11_1 Pin=Q1-3
+Added Net: Name=NetC11_1
+Added Member To Class: ClassName=S4V_Motor_Driver_Board_V1.0_Schematic Member=Component * J5
+Added Member To Class: ClassName=S4V_Motor_Driver_Board_V1.0_Schematic Member=Component C11 220uF

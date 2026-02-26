@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "ESDALC6V15M6"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "ESDALC6V15M6")
+        (spec "default")
+    )
+)

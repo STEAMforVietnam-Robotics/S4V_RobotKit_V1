@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AOD409
+D 60V P-Channel MOSFET
+K
+F http://www.aosmd.com/res/data_sheets/AOD409.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,7 @@
+Add Component: Footprint Not Found ESDALC6V15M6
+Add Pin To Net: Unknown Pin: Pin B1-2
+Add Pin To Net: Unknown Pin: Pin B1-4
+Added Pin To Net: NetName=GND Pin=JP1-3
+Added Pin To Net: NetName=GND Pin=U1-37
+Change Net Name : Old Net Name=GND New Net Name=SWCLK
+Add Class Member: Failed to add class member : Component B1 ESDALC6V1-5M6

@@ -1,0 +1,5 @@
+Layer Pairs Export File for PCB: D:\Mechatronics\Repositories\Project_S4V_Robot_Kit\Project_Motor_Driver_Board\hardware\V1.0\S4V_Motor_Driver_Board_V1.0\S4V_Motor_Driver_Board_V1.0_PCB.PcbDoc
+LayersSetName=Top_Bot_Plated_Thru_Holes|DrillFile=s4v_motor_driver_board_v1.0_pcb-roundholes-plated.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_Plated_Slot_Holes|DrillFile=s4v_motor_driver_board_v1.0_pcb-slotholes-plated.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_NonPlated_Thru_Holes|DrillFile=s4v_motor_driver_board_v1.0_pcb-roundholes-nonplated.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_NonPlated_Slot_Holes|DrillFile=s4v_motor_driver_board_v1.0_pcb-slotholes-nonplated.txt|DrillLayers=gtl,gbl

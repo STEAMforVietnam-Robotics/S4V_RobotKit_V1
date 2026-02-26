@@ -1,0 +1,18 @@
+.AOD409 :1 ;60V P-Channel MOSFET
+AOD409
+*STM Q
+*NGS
+*PLB 1="G" 2="D" 3="S"
+*MXP 3
+*DFN AOD409
+~!Manufacturer_Name (Alpha & Omega Semiconductors)
+~!Manufacturer_Part_Number (AOD409)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Arrow Part Number (AOD409)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/aod409/alpha-and-omega-semiconductor?region=nac)
+~!Link Datasheet (http://www.aosmd.com/res/data_sheets/AOD409.pdf)
+~!Height (2.4mm)
+~!3D_Model (AOD409)
+AOD409
+1.1!U 2.1!U 3.1!U 

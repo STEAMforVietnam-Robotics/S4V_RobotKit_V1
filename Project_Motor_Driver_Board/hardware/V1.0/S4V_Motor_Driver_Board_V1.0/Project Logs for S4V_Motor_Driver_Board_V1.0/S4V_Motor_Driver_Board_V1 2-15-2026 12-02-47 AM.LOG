@@ -1,0 +1,4 @@
+Added Component: Designator=*(PCBComponent_1)
+Added Pin To Net: NetName=+12V Pin=*-1
+Added Pin To Net: NetName=GND Pin=*-2
+Added Member To Class: ClassName=S4V_Motor_Driver_Board_V1.0_Schematic Member=Component * J?

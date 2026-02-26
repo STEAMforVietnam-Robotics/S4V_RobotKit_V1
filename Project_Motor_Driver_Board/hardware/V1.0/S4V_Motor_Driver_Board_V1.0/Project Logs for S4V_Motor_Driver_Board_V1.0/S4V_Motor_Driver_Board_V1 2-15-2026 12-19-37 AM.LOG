@@ -1,0 +1,6 @@
+Change Component Footprint: Designator=C14 Old Footprint=CAP_0603 New Footprint=CAP_0805
+Change Component Footprint: Designator=C15 Old Footprint=CAP_0603 New Footprint=CAP_0805
+Change Component Footprint: Designator=C16 Old Footprint=CAP_0603 New Footprint=CAP_0805
+Change Component Footprint: Designator=C17 Old Footprint=CAP_0603 New Footprint=CAP_0805
+Added Member To Class: ClassName=S4V_Motor_Driver_Board_V1.0_Schematic Member=Component * J5
+Added Member To Class: ClassName=S4V_Motor_Driver_Board_V1.0_Schematic Member=Component R7 1k

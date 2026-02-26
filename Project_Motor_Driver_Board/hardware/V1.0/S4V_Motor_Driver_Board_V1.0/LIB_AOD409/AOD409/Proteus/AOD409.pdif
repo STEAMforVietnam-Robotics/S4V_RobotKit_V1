@@ -1,0 +1,153 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "AOD409"
+   (description "60V P-Channel MOSFET")
+   (family "TRX")
+   (package "AOD409")
+   (attribute "Datasheet Link" "http://www.aosmd.com/res/data_sheets/AOD409.pdf")
+   (attribute "Geometry.Height" "2.4mm")
+   (attribute "Manufacturer_Name" "Alpha & Omega Semiconductors")
+   (attribute "Manufacturer_Part_Number" "AOD409")
+   (attribute "Mouser Part Number" "")
+   (attribute "Mouser Price/Stock" "")
+   (attribute "Arrow Part Number" "AOD409")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/aod409/alpha-and-omega-semiconductor?region=nac")
+   (gate
+    (symbol "AOD409")
+    (pin "G" 1 PS)
+    (pin "D" 2 PS)
+    (pin "S" 3 PS)
+   )
+  )
+  (symbol "AOD409"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (circle (pt 400 100) (pt 100 100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 100) (pt 300 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 200) (pt 300 300))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 100 0) (pt 200 0) (pt 200 200))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 100) (pt 230 100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 300 200) (pt 230 200))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 230 0) (pt 300 0))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 230 220) (pt 230 180))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 230 -20) (pt 230 20))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 230 80) (pt 230 120))
+   )
+   (graphic
+    (stroke 10)
+    (path (closed true) (pt 300 100) (pt 260 120) (pt 260 80) (pt 300 100))
+   )
+   (terminal
+    (body (symbol "PINSHORT") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 0 -20) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 80 10) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PINSHORT") (pt 300 400) (rot 90) (mir X) (visible true))
+    (name (pt 0 -20) (rot 90) (just TOP RIGHT) (visible false))
+    (number (pt 0 20) (rot 90) (just TOP LEFT) (visible true)))
+   (terminal
+    (body (symbol "PINSHORT") (pt 300 -200) (rot 90) (mir 0) (visible true))
+    (name (pt 0 -20) (rot 90) (just TOP RIGHT) (visible false))
+    (number (pt 0 20) (rot 90) (just TOP LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "AOD409"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -3.302 3.048)
+      (pt 3.302 3.048)
+      (pt 3.302 -3.048)
+      (pt -3.302 -3.048)
+      (pt -3.302 3.048))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -4.302 7.7)
+      (pt 4.302 7.7)
+      (pt 4.302 -6.15)
+      (pt -4.302 -6.15)
+      (pt -4.302 7.7))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -0.9 -3.048)
+      (pt 0.9 -3.048))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.6 -5.1)
+      (arc (pt -2.600 -5.100) (pt -2.600 -5.150) (pt -2.500 -5.050) (start 180.0) (sweep 180.0))
+      (pt -2.5 -5.1)
+      (arc (pt -2.500 -5.100) (pt -2.600 -5.150) (pt -2.500 -5.050) (start 180.0) (sweep .0))
+      (pt -2.6 -5.1))))
+   (leg 1 (pt -2.286 -3.300) (padstack 0))
+   (leg 2 (pt 0.000 3.300) (padstack 2))
+   (leg 3 (pt 2.286 -3.300) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 1.500 3.000 0 0 90.000))
+   )
+   (padstack 2
+    (plated false)
+    (pad (layer TCOP) (rectf 6.250 6.800 0 0 90.000))
+   )
+   (model "AOD409.stp"
+    (euler 90 0 0)
+    (offset 0 1.840000033378601 0)
+   )
+  )
+ )
+)

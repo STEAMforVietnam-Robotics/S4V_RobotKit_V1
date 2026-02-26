@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=SWDIO Pin=D5-1
+Removed Pin From Net: NetName=GND Pin=D5-2
+Removed Pin From Net: NetName=SWCLK Pin=D6-1
+Removed Pin From Net: NetName=GND Pin=D6-2
+Removed Pin From Net: NetName=GND Pin=U8-9
+Removed Member From Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=D5
+Removed Member From Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=D6
+Change Component Comment : Designator=C30 Old Comment=100nF New Comment=1uF
+Change Component Comment : Designator=C31 Old Comment=100nF New Comment=1uF
+Added Component: Designator=D?(TVS_ESDALC6V1-5M6)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "{'manufacturer': u'STMicroelectronics'}"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ESDALC6V1-5M6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=SWDIO Pin=D?-1
+Added Pin To Net: NetName=GND Pin=D?-2
+Added Pin To Net: NetName=SWCLK Pin=D?-4
+Added Member To Class: ClassName=S4V_Robot_Brain_V2.0_Schematic Member=Component D? ESDALC6V1-5M6
