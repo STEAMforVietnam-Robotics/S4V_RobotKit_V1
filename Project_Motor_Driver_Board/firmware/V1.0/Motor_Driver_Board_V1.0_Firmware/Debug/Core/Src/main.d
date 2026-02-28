@@ -32,7 +32,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
  ../USB_DEVICE/Target/usbd_conf.h ../Core/Inc/gpio.h \
  ../Core/Inc/mtdriver_rs485.h ../Core/Inc/mtdriver_usbcdc.h \
- ../Core/Inc/eeprom_emul.h ../Core/Inc/mtdriver_sys.h
+ ../Core/Inc/eeprom_emul.h ../Core/Inc/mtdriver_sys.h ../Core/Inc/tim.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
@@ -74,3 +74,4 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/mtdriver_usbcdc.h:
 ../Core/Inc/eeprom_emul.h:
 ../Core/Inc/mtdriver_sys.h:
+../Core/Inc/tim.h:

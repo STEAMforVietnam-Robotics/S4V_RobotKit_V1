@@ -9,7 +9,8 @@
 #include "mtdriver_sys.h"
 #include <string.h>
 
-RS485_Device mtDriverBoard;
+RS485_Device rs485Port;
+uint8_t rs485RxOkFlag = 0;
 
 void MTDRIVER_RS485_Init(uint8_t id,
 				GPIO_TypeDef *GPIO_Driver_Enable_Port,
@@ -17,34 +18,34 @@ void MTDRIVER_RS485_Init(uint8_t id,
 				GPIO_TypeDef *GPIO_Receiver_Enable_Port,
 				uint16_t GPIO_Receiver_Enable_Pin)
 {
-	mtDriverBoard.deviceID = id;
-	mtDriverBoard.GPIO_Driver_Enable_Port = GPIO_Driver_Enable_Port;
-	mtDriverBoard.GPIO_Driver_Enable_Pin = GPIO_Driver_Enable_Pin;
-	mtDriverBoard.GPIO_Receiver_Enable_Port = GPIO_Receiver_Enable_Port;
-	mtDriverBoard.GPIO_Receiver_Enable_Pin = GPIO_Receiver_Enable_Pin;
+	rs485Port.deviceID = id;
+	rs485Port.GPIO_Driver_Enable_Port = GPIO_Driver_Enable_Port;
+	rs485Port.GPIO_Driver_Enable_Pin = GPIO_Driver_Enable_Pin;
+	rs485Port.GPIO_Receiver_Enable_Port = GPIO_Receiver_Enable_Port;
+	rs485Port.GPIO_Receiver_Enable_Pin = GPIO_Receiver_Enable_Pin;
 }
 
 void MTDRIVER_RS485_RX_Enable(){
 	/* RECEIVING MODE: RE: 0, DE: 0 */
-	HAL_GPIO_WritePin(mtDriverBoard.GPIO_Receiver_Enable_Port, mtDriverBoard.GPIO_Receiver_Enable_Pin, 0);
-	HAL_GPIO_WritePin(mtDriverBoard.GPIO_Driver_Enable_Port, mtDriverBoard.GPIO_Driver_Enable_Pin, 0);
+	HAL_GPIO_WritePin(rs485Port.GPIO_Receiver_Enable_Port, rs485Port.GPIO_Receiver_Enable_Pin, 0);
+	HAL_GPIO_WritePin(rs485Port.GPIO_Driver_Enable_Port, rs485Port.GPIO_Driver_Enable_Pin, 0);
 }
 
 void MTDRIVER_RS485_RX_StateMachine(uint8_t state){
-	mtDriverBoard.state = state;
+	rs485Port.state = state;
 }
 
 void MTDRIVER_RS485_RX_ScanningHeader(){
-	if(mtDriverBoard.rxBuffer[0] == 0x55){
+	if(rs485Port.rxBuffer[0] == 0x55){
 		MTDRIVER_RS485_RX_StateMachine(1);
 	}
 }
 
 void MTDRIVER_RS485_RX_CheckDevice(){
 
-	if(mtDriverBoard.state == 1){
-			if(mtDriverBoard.rxBuffer[1] == MT_DRIVER_ID){
-				mtDriverBoard.targetDeviceID = mtDriverBoard.rxBuffer[1];
+	if(rs485Port.state == 1){
+			if(rs485Port.rxBuffer[1] == MT_DRIVER_ID){
+				rs485Port.targetDeviceID = rs485Port.rxBuffer[1];
 				MTDRIVER_RS485_RX_StateMachine(2);
 			}
 	}
@@ -56,21 +57,21 @@ void MTDRIVER_RS485_RX_CheckDataContent(){
 	uint8_t CheckDataContent(uint8_t dataContentList[], uint8_t length){
 
 		for(int i = 0; i < length; i++){
-			if(mtDriverBoard.rxBuffer[2] == dataContentList[i]){
+			if(rs485Port.rxBuffer[2] == dataContentList[i]){
 				return 1;
 			}
 		}
 		return 0;
 	}
 
-	if(mtDriverBoard.state == 2){
+	if(rs485Port.state == 2){
 
-		if(mtDriverBoard.rxBuffer[1] == MT_DRIVER_ID){
+		if(rs485Port.rxBuffer[1] == MT_DRIVER_ID){
 			uint8_t MT_DRIVER_DATA_CONTENT[] = {0x01, 0x02, 0x03, 0x04};
 			if(CheckDataContent(MT_DRIVER_DATA_CONTENT, 4) == 0){
 				return;
 			}
-			switch(mtDriverBoard.rxBuffer[2]){
+			switch(rs485Port.rxBuffer[2]){
 				case 0x01:
 					MTDRIVER_RS485_RX_StateMachine(3);
 					break;
@@ -92,10 +93,10 @@ void MTDRIVER_RS485_RX_CheckDataContent(){
 
 int MTDRIVER_RS485_RX_VerifyDataPacket(){
 
-	if(mtDriverBoard.state == 3){
-		mtDriverBoard.checksum = 0x55 | mtDriverBoard.rxBuffer[1] | mtDriverBoard.rxBuffer[2] | mtDriverBoard.rxBuffer[3];
+	if(rs485Port.state == 3){
+		rs485Port.checksum = 0x55 | rs485Port.rxBuffer[1] | rs485Port.rxBuffer[2] | rs485Port.rxBuffer[3];
 
-		if(mtDriverBoard.checksum == mtDriverBoard.rxBuffer[4]){
+		if(rs485Port.checksum == rs485Port.rxBuffer[4]){
 			return 1;
 		}
 
@@ -105,8 +106,9 @@ int MTDRIVER_RS485_RX_VerifyDataPacket(){
 
 void MTDRIVER_RS485_RX_ReceiveVerifiedData(){
 	if(MTDRIVER_RS485_RX_VerifyDataPacket() == 1){
-		mtDriverBoard.dataContent = mtDriverBoard.rxBuffer[2];
-		mtDriverBoard.data = mtDriverBoard.rxBuffer[3];
+		rs485Port.dataContent = rs485Port.rxBuffer[2];
+		rs485Port.data = rs485Port.rxBuffer[3];
+		rs485RxOkFlag = 1;
 	}
 }
 
@@ -121,16 +123,12 @@ void MTDRIVER_RS485_RX_ReceiveData(){
 
 void MTDRIVER_RS485_TX_Enable(){
 	/* TRANSMITTING MODE: RE: X (Don't care), DE: 1 */
-	HAL_GPIO_WritePin(mtDriverBoard.GPIO_Receiver_Enable_Port, mtDriverBoard.GPIO_Receiver_Enable_Pin, 0);
-	HAL_GPIO_WritePin(mtDriverBoard.GPIO_Driver_Enable_Port, mtDriverBoard.GPIO_Driver_Enable_Pin, 1);
+	HAL_GPIO_WritePin(rs485Port.GPIO_Receiver_Enable_Port, rs485Port.GPIO_Receiver_Enable_Pin, 0);
+	HAL_GPIO_WritePin(rs485Port.GPIO_Driver_Enable_Port, rs485Port.GPIO_Driver_Enable_Pin, 1);
 }
 
 void MTDRIVER_RS485_TX_SendData(UART_HandleTypeDef *huart, uint8_t targetDeviceID, uint8_t txBuffer[10]){
-	mtDriverBoard.targetDeviceID = targetDeviceID;
-	memcpy(mtDriverBoard.txBuffer, txBuffer, 10);
-	HAL_UART_Transmit(huart, mtDriverBoard.txBuffer, 10, 100);
+	rs485Port.targetDeviceID = targetDeviceID;
+	memcpy(rs485Port.txBuffer, txBuffer, 10);
+	HAL_UART_Transmit(huart, rs485Port.txBuffer, 10, 100);
 }
-
-
-
-

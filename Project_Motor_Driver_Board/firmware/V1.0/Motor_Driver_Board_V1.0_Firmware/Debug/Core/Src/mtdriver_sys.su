@@ -1,0 +1,2 @@
+../Core/Src/mtdriver_sys.c:16:6:MTDRIVER_UpdateSystemInfo	24	static
+../Core/Src/mtdriver_sys.c:27:6:MTDRIVER_Control	8	static

@@ -28,7 +28,7 @@ Core/Src/mtdriver_rs485.o: ../Core/Src/mtdriver_rs485.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
- ../Core/Inc/mtdriver_sys.h
+ ../Core/Inc/mtdriver_sys.h ../Core/Inc/tim.h ../Core/Inc/main.h
 ../Core/Inc/mtdriver_rs485.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
@@ -60,3 +60,5 @@ Core/Src/mtdriver_rs485.o: ../Core/Src/mtdriver_rs485.c \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h:
 ../Core/Inc/mtdriver_sys.h:
+../Core/Inc/tim.h:
+../Core/Inc/main.h:

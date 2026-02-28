@@ -39,14 +39,16 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-extern RS485_Device mtDriverBoard;
+extern MotorDriver motorDriver;
+extern RS485_Device rs485Port;
+extern uint8_t rs485RxOkFlag;
+
 extern uint8_t usbcdcRxFlag;
 extern uint8_t usbcdcRxOkFlag;
 extern uint8_t dataContent;
 extern uint8_t data;
 
 uint16_t VirtAddVarTab[NB_OF_VAR] = {0x0001};
-uint16_t unique_board_id;
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -69,6 +71,7 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 void MTDRIVER_USBCDC_RxCallback(void);
+void MTDRIVER_RS485_RxCallback(void);
 
 /* USER CODE END 0 */
 
@@ -105,20 +108,22 @@ int main(void)
   MX_TIM2_Init();
   MX_USART1_UART_Init();
   MX_USB_DEVICE_Init();
-
-  HAL_UARTEx_ReceiveToIdle_DMA(&huart1, mtDriverBoard.rxBuffer, (sizeof(mtDriverBoard.rxBuffer)/sizeof(mtDriverBoard.rxBuffer[0])));
-
-  HAL_FLASH_Unlock();
-
-  if(EE_Init() != HAL_OK){
-  	Error_Handler();
-  }
-
-  if(EE_ReadVariable(0x0001, &unique_board_id) != HAL_OK){
-    Error_Handler();
-  }
   /* USER CODE BEGIN 2 */
 
+  //Remember to unlock the permission to modify the Flash memory before-hand
+  HAL_FLASH_Unlock();
+
+  //Check the current status of the pages dedicatedly used for FEE
+  if(EE_Init() != HAL_OK){
+	  Error_Handler();
+  }
+
+  //Always set the variable 'motorDriver.uniqueBoardID' with value stored in the FEE virtual address
+  if(EE_ReadVariable(0x0001, &motorDriver.uniqueBoardID) != HAL_OK){
+  	  Error_Handler();
+  }
+
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -129,6 +134,8 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  MTDRIVER_USBCDC_RxCallback();
+	  MTDRIVER_RS485_RxCallback();
+	  MTDRIVER_Control();
   }
   /* USER CODE END 3 */
 }
@@ -192,7 +199,7 @@ void MTDRIVER_USBCDC_RxCallback(){
 				Error_Handler();
 			}
 			else{
-				if(EE_ReadVariable(0x0001, &unique_board_id) != HAL_OK){
+				if(EE_ReadVariable(0x0001, &motorDriver.uniqueBoardID) != HAL_OK){
 					Error_Handler();
 				}
 
@@ -200,17 +207,43 @@ void MTDRIVER_USBCDC_RxCallback(){
 			HAL_FLASH_Lock();
 		}
 
+
 		usbcdcRxOkFlag = 0;
 
 	}
 }
 
+//Use UART DMA to prevent overlapping interrupt service routines with the program in the main() loop
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 	if (huart->Instance == USART1){
-		MTDRIVER_RS485_RX_ReceiveData(&mtDriverBoard);
-		HAL_UARTEx_ReceiveToIdle_DMA(&huart1, mtDriverBoard.rxBuffer, 10);
+		MTDRIVER_RS485_RX_ReceiveData(&rs485Port);
+		HAL_UARTEx_ReceiveToIdle_DMA(&huart1, rs485Port.rxBuffer, 10);
+
 	}
 }
+
+void MTDRIVER_RS485_RxCallback(){
+	if(rs485RxOkFlag){
+		if(dataContent == MT_DRIVER_MODE_ID){
+				if(data == COAST_MODE){
+					MTDRIVER_UpdateSystemInfo(motorDriver.uniqueBoardID, motorDriver.pwm, BRAKE_MODE, motorDriver.fault);
+				}
+				else if (data == BRAKE_MODE){
+					MTDRIVER_UpdateSystemInfo(motorDriver.uniqueBoardID, motorDriver.pwm, COAST_MODE, motorDriver.fault);
+				}
+		}
+
+		else if(dataContent == MT_DRIVER_PWM_ID){
+			if(data >= 0 && data <=255){
+				MTDRIVER_UpdateSystemInfo(motorDriver.uniqueBoardID, data, motorDriver.mode, motorDriver.fault);
+			}
+		}
+
+	}
+
+	rs485RxOkFlag = 0;
+}
+
 
 /* USER CODE END 4 */
 
