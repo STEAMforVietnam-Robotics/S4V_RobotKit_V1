@@ -30,6 +30,7 @@
 #include <brainx_rs485.h>
 #include <brainx_usbcdc.h>
 #include <brainx_sys.h>
+#include <eeprom_emul.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -52,6 +53,10 @@ extern uint8_t data;
 
 extern BrainX_Power_Status brainxPowerStatus;
 
+uint16_t VirtAddVarTab[NB_OF_VAR] = {0x0001};
+
+uint16_t mt_id;
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -62,8 +67,6 @@ extern BrainX_Power_Status brainxPowerStatus;
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
-
 
 /* USER CODE END PV */
 
@@ -120,6 +123,17 @@ int main(void)
   BrainX_RS485_RX_Enable(&powerManagementBoard);
 
   HAL_UARTEx_ReceiveToIdle_DMA(&huart2, powerManagementBoard.rxBuffer, (sizeof(powerManagementBoard.rxBuffer)/sizeof(powerManagementBoard.rxBuffer[0])));
+
+  HAL_FLASH_Unlock();
+
+  if(EE_Init() != EE_OK){
+	  Error_Handler();
+  }
+
+  if(EE_ReadVariable(0x0001, &mt_id) != HAL_OK){
+  	Error_Handler();
+  }
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -210,18 +224,32 @@ void BrainX_USBCDC_RxCallback(){
 					break;
 			}
 		}
+		else if(dataContent == MT_DRIVER_UNIQUE_BOARD_ID){
+			if(EE_WriteVariable(0x0001, data) != HAL_OK){
+				Error_Handler();
+			}
+			else{
+				if(EE_ReadVariable(0x0001, &mt_id) != HAL_OK){
+					Error_Handler();
+				}
+
+			}
+			HAL_FLASH_Lock();
+		}
 
 		usbcdcRxOkFlag = 0;
 
 	}
 }
 
-void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t DataSize){
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 	if (huart->Instance == USART2){
 		BrainX_RS485_RX_ReceiveData(&powerManagementBoard);
 		HAL_UARTEx_ReceiveToIdle_DMA(&huart2, powerManagementBoard.rxBuffer, 10);
 	}
 }
+
+
 
 /* USER CODE END 4 */
 

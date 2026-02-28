@@ -1,0 +1,8 @@
+../Core/Src/mtdriver_usbcdc.c:25:6:MTDRIVER_USBCDC_RX_StateMachine	1
+../Core/Src/mtdriver_usbcdc.c:29:6:MTDRIVER_USBCDC_RX_ScanningHeader	2
+../Core/Src/mtdriver_usbcdc.c:35:6:MTDRIVER_USBCDC_RX_CheckDevice	4
+../Core/Src/mtdriver_usbcdc.c:53:10:CheckDataContent	3
+../Core/Src/mtdriver_usbcdc.c:51:6:MTDRIVER_USBCDC_RX_CheckDataContent	5
+../Core/Src/mtdriver_usbcdc.c:81:5:MTDRIVER_USBCDC_RX_VerifyDataPacket	3
+../Core/Src/mtdriver_usbcdc.c:94:6:MTDRIVER_USBCDC_RX_ReceiveVerifiedData	2
+../Core/Src/mtdriver_usbcdc.c:102:6:MTDRIVER_USBCDC_RX_ReceiveData	1

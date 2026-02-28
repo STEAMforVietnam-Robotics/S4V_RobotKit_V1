@@ -8,6 +8,7 @@
 #include "brainx_sys.h"
 #include <string.h>
 
+
 void BrainX_RS485_Init(RS485_Device *device, uint8_t id,
 				GPIO_TypeDef *GPIO_Driver_Enable_Port,
 				uint16_t GPIO_Driver_Enable_Pin,

@@ -9,6 +9,7 @@ C_SRCS += \
 ../Core/Src/brainx_sys.c \
 ../Core/Src/brainx_usbcdc.c \
 ../Core/Src/dma.c \
+../Core/Src/eeprom_emul.c \
 ../Core/Src/gpio.c \
 ../Core/Src/main.c \
 ../Core/Src/stm32f4xx_hal_msp.c \
@@ -24,6 +25,7 @@ OBJS += \
 ./Core/Src/brainx_sys.o \
 ./Core/Src/brainx_usbcdc.o \
 ./Core/Src/dma.o \
+./Core/Src/eeprom_emul.o \
 ./Core/Src/gpio.o \
 ./Core/Src/main.o \
 ./Core/Src/stm32f4xx_hal_msp.o \
@@ -39,6 +41,7 @@ C_DEPS += \
 ./Core/Src/brainx_sys.d \
 ./Core/Src/brainx_usbcdc.d \
 ./Core/Src/dma.d \
+./Core/Src/eeprom_emul.d \
 ./Core/Src/gpio.d \
 ./Core/Src/main.d \
 ./Core/Src/stm32f4xx_hal_msp.d \
@@ -57,7 +60,7 @@ Core/Src/%.o Core/Src/%.su Core/Src/%.cyclo: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/brainx_rs485.cyclo ./Core/Src/brainx_rs485.d ./Core/Src/brainx_rs485.o ./Core/Src/brainx_rs485.su ./Core/Src/brainx_sys.cyclo ./Core/Src/brainx_sys.d ./Core/Src/brainx_sys.o ./Core/Src/brainx_sys.su ./Core/Src/brainx_usbcdc.cyclo ./Core/Src/brainx_usbcdc.d ./Core/Src/brainx_usbcdc.o ./Core/Src/brainx_usbcdc.su ./Core/Src/dma.cyclo ./Core/Src/dma.d ./Core/Src/dma.o ./Core/Src/dma.su ./Core/Src/gpio.cyclo ./Core/Src/gpio.d ./Core/Src/gpio.o ./Core/Src/gpio.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f4xx_hal_msp.cyclo ./Core/Src/stm32f4xx_hal_msp.d ./Core/Src/stm32f4xx_hal_msp.o ./Core/Src/stm32f4xx_hal_msp.su ./Core/Src/stm32f4xx_it.cyclo ./Core/Src/stm32f4xx_it.d ./Core/Src/stm32f4xx_it.o ./Core/Src/stm32f4xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f4xx.cyclo ./Core/Src/system_stm32f4xx.d ./Core/Src/system_stm32f4xx.o ./Core/Src/system_stm32f4xx.su ./Core/Src/tim.cyclo ./Core/Src/tim.d ./Core/Src/tim.o ./Core/Src/tim.su ./Core/Src/usart.cyclo ./Core/Src/usart.d ./Core/Src/usart.o ./Core/Src/usart.su
+	-$(RM) ./Core/Src/brainx_rs485.cyclo ./Core/Src/brainx_rs485.d ./Core/Src/brainx_rs485.o ./Core/Src/brainx_rs485.su ./Core/Src/brainx_sys.cyclo ./Core/Src/brainx_sys.d ./Core/Src/brainx_sys.o ./Core/Src/brainx_sys.su ./Core/Src/brainx_usbcdc.cyclo ./Core/Src/brainx_usbcdc.d ./Core/Src/brainx_usbcdc.o ./Core/Src/brainx_usbcdc.su ./Core/Src/dma.cyclo ./Core/Src/dma.d ./Core/Src/dma.o ./Core/Src/dma.su ./Core/Src/eeprom_emul.cyclo ./Core/Src/eeprom_emul.d ./Core/Src/eeprom_emul.o ./Core/Src/eeprom_emul.su ./Core/Src/gpio.cyclo ./Core/Src/gpio.d ./Core/Src/gpio.o ./Core/Src/gpio.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f4xx_hal_msp.cyclo ./Core/Src/stm32f4xx_hal_msp.d ./Core/Src/stm32f4xx_hal_msp.o ./Core/Src/stm32f4xx_hal_msp.su ./Core/Src/stm32f4xx_it.cyclo ./Core/Src/stm32f4xx_it.d ./Core/Src/stm32f4xx_it.o ./Core/Src/stm32f4xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f4xx.cyclo ./Core/Src/system_stm32f4xx.d ./Core/Src/system_stm32f4xx.o ./Core/Src/system_stm32f4xx.su ./Core/Src/tim.cyclo ./Core/Src/tim.d ./Core/Src/tim.o ./Core/Src/tim.su ./Core/Src/usart.cyclo ./Core/Src/usart.d ./Core/Src/usart.o ./Core/Src/usart.su
 
 .PHONY: clean-Core-2f-Src
 

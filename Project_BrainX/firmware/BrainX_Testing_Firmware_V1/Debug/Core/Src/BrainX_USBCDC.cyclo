@@ -1,8 +1,8 @@
-../Core/Src/brainx_usbcdc.c:25:6:BrainX_USBCDC_RX_StateMachine	1
-../Core/Src/brainx_usbcdc.c:29:6:BrainX_USBCDC_RX_ScanningHeader	2
-../Core/Src/brainx_usbcdc.c:35:6:BrainX_USBCDC_RX_CheckDevice	4
-../Core/Src/brainx_usbcdc.c:53:10:CheckDataContent	3
-../Core/Src/brainx_usbcdc.c:51:6:BrainX_USBCDC_RX_CheckDataContent	8
-../Core/Src/brainx_usbcdc.c:98:5:BrainX_USBCDC_RX_VerifyDataPacket	3
-../Core/Src/brainx_usbcdc.c:111:6:BrainX_USBCDC_RX_ReceiveVerifiedData	2
-../Core/Src/brainx_usbcdc.c:121:6:BrainX_USBCDC_RX_ReceiveData	1
+../Core/Src/brainx_usbcdc.c:28:6:BrainX_USBCDC_RX_StateMachine	1
+../Core/Src/brainx_usbcdc.c:32:6:BrainX_USBCDC_RX_ScanningHeader	2
+../Core/Src/brainx_usbcdc.c:38:6:BrainX_USBCDC_RX_CheckDevice	4
+../Core/Src/brainx_usbcdc.c:56:10:CheckDataContent	3
+../Core/Src/brainx_usbcdc.c:54:6:BrainX_USBCDC_RX_CheckDataContent	11
+../Core/Src/brainx_usbcdc.c:114:5:BrainX_USBCDC_RX_VerifyDataPacket	3
+../Core/Src/brainx_usbcdc.c:127:6:BrainX_USBCDC_RX_ReceiveVerifiedData	2
+../Core/Src/brainx_usbcdc.c:136:6:BrainX_USBCDC_RX_ReceiveData	1

@@ -7,6 +7,7 @@
 
 
 #include <brainx_usbcdc.h>
+#include <brainx_sys.h>
 
 uint8_t usbcdcRxBuff[RX_BUFF_LEN];
 uint8_t usbcdcTxState = 0;
@@ -21,6 +22,8 @@ uint8_t deviceID;
 uint8_t dataContent;
 uint8_t data;
 uint8_t checksum;
+
+extern uint8_t mt_id;
 
 void BrainX_USBCDC_RX_StateMachine(uint8_t state){
 	usbcdcRxState = state;
@@ -63,7 +66,7 @@ void BrainX_USBCDC_RX_CheckDataContent(){
 	if(usbcdcRxState == 2){
 
 		//Device ID (0x10): Power Management Board
-		if(usbcdcRxBuffer[1] == 0x10){
+		if(usbcdcRxBuffer[1] == PWR_MNG_BOARD_ID){
 			uint8_t PWR_MNGT_BOARD_DATA_CONTENT[] = {0x01, 0x02, 0x03};
 
 			if(CheckDataContent(PWR_MNGT_BOARD_DATA_CONTENT, 3) == 0){
@@ -88,10 +91,23 @@ void BrainX_USBCDC_RX_CheckDataContent(){
 				//To Be Continued: Set a unique flag to log information via UART debugger
 					BrainX_USBCDC_RX_StateMachine(3);
 					break;
+
 			}
 
+		}
+
+		else if(usbcdcRxBuffer[1] == MT_DRIVER_ID){
+			uint8_t MT_DRIVER_DATA_CONTENT[] = {0x01, 0x02, 0x03, 0x04};
+			if(CheckDataContent(MT_DRIVER_DATA_CONTENT, 4) == 0){
+				return;
+			}
+			switch(usbcdcRxBuffer[2]){
+				case 0x01:
+					BrainX_USBCDC_RX_StateMachine(3);
+					break;
 
 		}
+	}
 	}
 }
 
@@ -109,13 +125,12 @@ int BrainX_USBCDC_RX_VerifyDataPacket(){
 }
 
 void BrainX_USBCDC_RX_ReceiveVerifiedData(){
-
 	if(BrainX_USBCDC_RX_VerifyDataPacket() == 1){
 		usbcdcRxOkFlag = 1;
 		dataContent = usbcdcRxBuffer[2];
 		data = usbcdcRxBuffer[3];
-	}
 
+	}
 }
 
 void BrainX_USBCDC_RX_ReceiveData(){

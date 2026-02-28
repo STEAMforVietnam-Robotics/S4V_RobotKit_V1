@@ -42,7 +42,15 @@ typedef enum{
 /*Bluetooth Gamepad */
 #define BLT_GAMEPAD_ID 0x15
 #define BLT_GAMEPAD_STATUS 0x01
-#define BLT_GAMEPAD_FAULT 0x02
+#define BLT_GAMEPAD_FAULT_ID 0x02
+
+/*Motor Driver Board */
+#define MT_DRIVER_ID 0x15
+#define MT_DRIVER_UNIQUE_BOARD_ID 0x01
+#define MT_DRIVER_PWM_ID 0x02
+#define MT_DRIVER_MODE_ID 0x03
+#define MT_DRIVER_FAULT_ID 0x04
+
 
 void BrainX_UpdateSystemInfo(uint8_t status);
 void BrainX_DisplayLED();

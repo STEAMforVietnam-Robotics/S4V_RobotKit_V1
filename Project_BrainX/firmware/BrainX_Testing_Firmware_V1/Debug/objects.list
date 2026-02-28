@@ -2,6 +2,7 @@
 "./Core/Src/brainx_sys.o"
 "./Core/Src/brainx_usbcdc.o"
 "./Core/Src/dma.o"
+"./Core/Src/eeprom_emul.o"
 "./Core/Src/gpio.o"
 "./Core/Src/main.o"
 "./Core/Src/stm32f4xx_hal_msp.o"

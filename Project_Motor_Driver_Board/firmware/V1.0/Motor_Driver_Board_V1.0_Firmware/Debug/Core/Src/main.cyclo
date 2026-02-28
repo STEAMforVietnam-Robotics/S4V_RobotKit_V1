@@ -1,0 +1,5 @@
+../Core/Src/main.c:79:5:main	3
+../Core/Src/main.c:140:6:SystemClock_Config	4
+../Core/Src/main.c:183:6:MTDRIVER_USBCDC_RxCallback	6
+../Core/Src/main.c:208:6:HAL_UART_RxCpltCallback	2
+../Core/Src/main.c:221:6:Error_Handler	1
